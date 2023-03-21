@@ -1,8 +1,9 @@
+import "./sass/partials/main.css";
 import { Link, Routes, Route } from 'react-router-dom';
-import './App.css';
 import Home from "./pages/home.js";
 import Navbar from "./components/Navbar.js"
 import Footer from "./components/Footer.js"
+
 
 function App() {
   return (
