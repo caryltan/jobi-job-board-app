@@ -3,6 +3,7 @@ import HowWork from "../components/HowWork.js";
 import LearnMore from "../components/LearnMore";
 import Categories from "../components/CategoriesSection";
 import HireTalents from "../components/HireTalents";
+import TestimonialsSection from "../components/TestimonialsSection";
 
 const home = () => {
     return (
@@ -12,6 +13,7 @@ const home = () => {
         <LearnMore />
         <Categories />
         <HireTalents />
+        <TestimonialsSection />
         </>
     )
 }
