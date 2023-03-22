@@ -18,7 +18,7 @@ const CategoriesSection = () => {
 
                         {/* <div class="container-sm shadow p-3 mb-5 bg-white rounded category-card h-50 px-4"> */}
                         <div class="col-12 col-lg-3 ">
-                            <div class="card mb-4 shadow bg-white">
+                            <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
                                         <img src={PenIcon} alt="pen icon" class="pb-4" />
@@ -31,7 +31,7 @@ const CategoriesSection = () => {
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 ">
-                            <div class="card mb-4 shadow bg-white">
+                            <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
                                         <img src={CodeIcon} alt="coding icon" class="pb-4" />
@@ -44,7 +44,7 @@ const CategoriesSection = () => {
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 ">
-                            <div class="card mb-4 shadow bg-white">
+                            <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
                                         <img src={UserIcon} alt="user icon" class="pb-4" />
@@ -57,7 +57,7 @@ const CategoriesSection = () => {
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 ">
-                            <div class="card mb-4 shadow bg-white">
+                            <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
                                         <img src={BarsIcon} alt="slider bars icon" class="pb-4" />
@@ -70,7 +70,7 @@ const CategoriesSection = () => {
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 ">
-                            <div class="card mb-4 shadow bg-white">
+                            <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
                                         <img src={BriefcaseIcon} alt="briefcase icon" class="pb-4" />
@@ -83,7 +83,7 @@ const CategoriesSection = () => {
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 ">
-                            <div class="card mb-4 shadow bg-white">
+                            <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
                                         <img src={PencilIcon} alt="pencil icon" class="pb-4" />
@@ -96,7 +96,7 @@ const CategoriesSection = () => {
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 ">
-                            <div class="card mb-4 shadow bg-white">
+                            <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
                                         <img src={PhoneIcon} alt="phone icon" class="pb-4" />
@@ -109,7 +109,7 @@ const CategoriesSection = () => {
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 ">
-                            <div class="card mb-4 shadow bg-white">
+                            <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
                                         <img src={PhoneIcon} alt="phone icon" class="pb-4" />
