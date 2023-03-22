@@ -25,7 +25,7 @@ const CategoriesSection = () => {
                                     </div>
                                     <div class="card-text">
                                         <h5 class="pb-4">Design & Development</h5>
-                                        <p>2340 openings</p>
+                                        <p class="text-muted">2340 openings</p>
                                     </div>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ const CategoriesSection = () => {
                                     </div>
                                     <div class="card-text">
                                         <h5 class="pb-4">Programming & Coding</h5>
-                                        <p>2340 openings</p>
+                                        <p class="text-muted">2340 openings</p>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ const CategoriesSection = () => {
                                     </div>
                                     <div class="card-text">
                                         <h5 class="pb-4">Customer Marketing & Sales</h5>
-                                        <p>2340 openings</p>
+                                        <p class="text-muted">2340 openings</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ const CategoriesSection = () => {
                                     </div>
                                     <div class="card-text">
                                         <h5 class="pb-4">Video Editing & 3D Work</h5>
-                                        <p>2340 openings</p>
+                                        <p class="text-muted">2340 openings</p>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ const CategoriesSection = () => {
                                     </div>
                                     <div class="card-text">
                                         <h5 class="pb-4">Business Marketing</h5>
-                                        <p>2340 openings</p>
+                                        <p class="text-muted">2340 openings</p>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@ const CategoriesSection = () => {
                                     </div>
                                     <div class="card-text">
                                         <h5 class="pb-4">Art & Animation</h5>
-                                        <p>2340 openings</p>
+                                        <p class="text-muted">2340 openings</p>
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ const CategoriesSection = () => {
                                     </div>
                                     <div class="card-text">
                                         <h5 class="pb-4">Business Development</h5>
-                                        <p>2340 openings</p>
+                                        <p class="text-muted">2340 openings</p>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ const CategoriesSection = () => {
                                     </div>
                                     <div class="card-text">
                                         <h5 class="pb-4">13k+ Jobs already posted</h5>
-                                        <p>2340 openings</p>
+                                        <p class="text-muted">2340 openings</p>
                                     </div>
                                 </div>
                             </div>
