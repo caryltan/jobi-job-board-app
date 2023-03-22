@@ -37,10 +37,10 @@ const NavBar = () => {
                         </ul>
                         <ul class="navbar-nav d-flex justify-content-end col-2">
                             <li class="nav-item pl-4">
-                                <a class="nav-link" href="#">Register</a>
+                                <a class="nav-link" href="#">Login</a>
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-primary">Register</button>
                             </li>
                         </ul>
                     </div>
