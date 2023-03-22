@@ -3,6 +3,7 @@ import { Link, Routes, Route } from 'react-router-dom';
 import Home from "./pages/home.js";
 import Footer from "./components/Footer.js"
 import Header from "./components/Header.js"
+import bootstrap from 'bootstrap'
 
 
 function App() {
