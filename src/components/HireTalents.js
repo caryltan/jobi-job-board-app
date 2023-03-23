@@ -12,7 +12,7 @@ const HireTalents = () => {
                     <p class="text-muted pt-5">Find Freelancers</p>
                     <h2 class="pb-3">Hire Top Talents</h2>
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item border-light">
+                        <div class="accordion-item">
                             <h3 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     <strong>Seamless Search</strong>
@@ -24,7 +24,7 @@ const HireTalents = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item border-light">
+                        <div class="accordion-item">
                             <h3 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <strong>Hire Top Talents</strong>

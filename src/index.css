@@ -25,3 +25,7 @@ h1, h2 {
   width: 90%;
   margin: 0 auto;
 }
+
+.accordion-item {
+  border-bottom: 2px solid black;
+}
