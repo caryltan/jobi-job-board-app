@@ -5,7 +5,9 @@ import HeadshotThree from "../assets/corporate-headshot-3.jpg";
 const LearnMore = () => {
     return (
         <>
-            <section class="row px-5 pt-5">
+        <div class="wrapper">
+            <section class="pt-5">
+                <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="d-flex">
                         <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
@@ -34,6 +36,7 @@ const LearnMore = () => {
                     </ul>
                     <button type="button" class="btn btn-primary">Learn More</button>
                 </div>
+                </div>
             </section>
             <section>
                 <div class="row px-5 pt-5">
@@ -53,7 +56,9 @@ const LearnMore = () => {
                         <hr />
                     </div>
                 </div>
+                
             </section>
+            </div>
         </>
     )
 }

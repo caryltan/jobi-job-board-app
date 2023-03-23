@@ -10,11 +10,12 @@ const CategoriesSection = () => {
     return (
         <>
             <section class="album bg-light py-5">
+                <div class="wrapper">
                 <div class="container">
                     <div>
                         <h2>Most demanded job categories.</h2>
                     </div>
-                    <div class="row px-5 pt-5">
+                    <div class="row px-3 pt-5">
 
                         {/* <div class="container-sm shadow p-3 mb-5 bg-white rounded category-card h-50 px-4"> */}
                         <div class="col-12 col-lg-3 ">
@@ -122,6 +123,7 @@ const CategoriesSection = () => {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </section>
         </>

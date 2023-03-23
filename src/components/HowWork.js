@@ -6,7 +6,8 @@ const HowWork = () => {
     return (
         <>
         <section>
-            <div class="row px-5 pt-5">
+            <div class="wrapper">
+            <div class="row pt-5">
                 <div class="col-12 col-md-4">
                     <hr/>
                 </div>
@@ -34,6 +35,7 @@ const HowWork = () => {
                     <p class="text-center">Apply and get your preferable jobs with all the requirements and get hired.</p>
                 </div>
                 <hr />
+            </div>
             </div>
         </section>
         </>

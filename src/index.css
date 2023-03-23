@@ -11,3 +11,17 @@ h1, h2 {
 .testimonial-section {
   min-height: 500px;
 }
+
+.blog {
+  min-height: 450px;
+}
+
+.social-icon {
+  height: 20px;
+  padding-right: 10px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}

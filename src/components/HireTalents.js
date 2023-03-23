@@ -3,7 +3,8 @@ import Search from "../assets/search-talents-preview.png"
 const HireTalents = () => {
     return (
         <>
-            <section class="row px-5 pt-5">
+            <section class="row pt-5">
+                <div class="wrapper row">
                 <div class="col-12 col-md-6">
                     <img src={Search} alt="screenshot of hireable talent listings" class="w-100" />
                 </div>
@@ -37,6 +38,7 @@ const HireTalents = () => {
                         </div>
                     </div>
                     <button type="button" class="btn btn-primary">Explore All</button>
+                </div>
                 </div>
             </section>
         </>
