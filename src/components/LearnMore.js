@@ -22,15 +22,15 @@ const LearnMore = () => {
                 </div>
                 <div class="col-12 col-md-6">
                     <h2>Get the job of your dreams quickly.</h2>
-                    <p>Explore our job listings and find the perfect job for you.</p>
-                    <ul>
-                        <li>
+                    <p class="text-muted">Explore our job listings and find the perfect job for you.</p>
+                    <ul class="check-list">
+                        <li class="">
                             <p>Seamless searching</p>
                         </li>
-                        <li>
+                        <li class="">
                             <p>Protected payments, every time</p>
                         </li>
-                        <li>
+                        <li class="">
                             <p>Wide range of job categories</p>
                         </li>
                     </ul>
