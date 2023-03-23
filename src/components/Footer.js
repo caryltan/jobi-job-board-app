@@ -25,13 +25,13 @@ const Footer = () => {
                             <div class="row col-12 col-sm-4">
                                 <div class="justify-content-center justify-content-sm-start d-flex">
                                     <ul class="list-unstyled d-flex justify-content-between">
-                                        <li class="pr-5">
+                                        <li class="pr-3">
                                             <img src={Facebook} alt="Facebook social icon" class="social-icon" />
                                         </li>
-                                        <li class="px-5">
+                                        <li class="px-3">
                                             <img src={Twitter} alt="Twitter social icon" class="social-icon" />
                                         </li>
-                                        <li class="pl-5">
+                                        <li class="pl-3">
                                             <img src={Linkedin} alt="Linkedin social icon" class="social-icon" />
                                         </li>
                                     </ul>
