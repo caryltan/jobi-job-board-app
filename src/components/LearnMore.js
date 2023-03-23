@@ -20,21 +20,23 @@ const LearnMore = () => {
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 px-5 d-flex justify-content-center">
+                    <div>
                     <h2>Get the job of your dreams quickly.</h2>
                     <p class="text-muted">Explore our job listings and find the perfect job for you.</p>
-                    <ul class="check-list">
-                        <li class="">
+                    <ul class="check-list py-3">
+                        <li>
                             <p>Seamless searching</p>
                         </li>
-                        <li class="">
+                        <li>
                             <p>Protected payments, every time</p>
                         </li>
-                        <li class="">
+                        <li>
                             <p>Wide range of job categories</p>
                         </li>
                     </ul>
                     <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
                 </div>
                 </div>
             </section>

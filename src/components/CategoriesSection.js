@@ -18,7 +18,7 @@ const CategoriesSection = () => {
                     <div class="row px-3 pt-5">
 
                         {/* <div class="container-sm shadow p-3 mb-5 bg-white rounded category-card h-50 px-4"> */}
-                        <div class="col-12 col-lg-3 ">
+                        <div class="col-6 col-lg-3 ">
                             <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
@@ -31,7 +31,7 @@ const CategoriesSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 ">
+                        <div class="col-6 col-lg-3 ">
                             <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
@@ -44,7 +44,7 @@ const CategoriesSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 ">
+                        <div class="col-6 col-lg-3 ">
                             <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
@@ -57,7 +57,7 @@ const CategoriesSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 ">
+                        <div class="col-6 col-lg-3 ">
                             <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
@@ -70,7 +70,7 @@ const CategoriesSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 ">
+                        <div class="col-6 col-lg-3 ">
                             <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
@@ -83,7 +83,7 @@ const CategoriesSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 ">
+                        <div class="col-6 col-lg-3 ">
                             <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
@@ -96,7 +96,7 @@ const CategoriesSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 ">
+                        <div class="col-6 col-lg-3 ">
                             <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">
@@ -109,7 +109,7 @@ const CategoriesSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-3 ">
+                        <div class="col-6 col-lg-3 ">
                             <div class="card mb-4 shadow bg-white border-light">
                                 <div class="card-body">
                                     <div class="card-img-top">

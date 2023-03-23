@@ -10,7 +10,7 @@ const Footer = () => {
         <>
             <footer class="pt-5">
                 <div class="wrapper">
-                    <div class="row">
+                    <div class="row pb-4">
                         <div class="col-12 col-sm-4">
                             <img src={Logo} alt="Jobi logo" />
                             <p>support@jobi.com</p>
@@ -61,6 +61,28 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between py-3">
+                        <div class="col-4 d-flex flex-row">
+                            <p>Privacy & Terms</p>
+                            <p class="px-4">Contact Us</p>
+                        </div>
+                        <div class="col-4 row">
+                            <p class="text-center">Copyright ©2023 Jobi Inc.</p>
+                        </div>
+                        <div class="row col-4">
+                            <ul class="list-unstyled d-flex flex-row justify-content-end">
+                                <li >
+                                    <img src={Facebook} alt="Facebook social icon" class="social-icon-bottom" />
+                                </li>
+                                <li class="">
+                                    <img src={Instagram} alt="Instagram social icon" class="social-icon-bottom" />
+                                </li>
+                                <li class="">
+                                    <img src={Pinterest} alt="Pinterest social icon" class="social-icon-bottom" />
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -21,6 +21,11 @@ h1, h2 {
   padding-right: 10px;
 }
 
+.social-icon-bottom {
+  height: 20px;
+  padding-right: 30px;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
