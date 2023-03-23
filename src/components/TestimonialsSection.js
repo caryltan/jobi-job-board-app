@@ -7,9 +7,9 @@ const TestimonialsSection = () => {
             <section class="bg-light">
                 <div class="wrapper">
                     <div class="testimonial-section">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-between">
 
-                            <div class="col-12 col-xl-4 py-5">
+                            <div class="col-12 col-lg-4 py-5">
                                 <div>
                                     <p>TESTIMONIALS</p>
                                     <h2>Clients love Jobi</h2>
@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
                             </div>
 
 
-                            <div class="col-8 col-xl-8 ">
+                            <div class="col-12 col-lg-8 ">
                                 <div id="carouselExampleIndicators" class="carousel slide">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <div class="row px-5 pt-5 col-12 col-xl-12">
+                                            <div class="row  pt-5 col-12 col-xl-12">
                                                 <div class="col-6 col-xl-6">
                                                     <div class="card border-light ">
                                                         <div class="card-body">
