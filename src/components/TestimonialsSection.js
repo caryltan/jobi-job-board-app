@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <div class="row  pt-5 col-12 col-xl-12">
+                                            <div class="row pt-5 col-12 col-xl-12">
                                                 <div class="col-6 col-xl-6">
                                                     <div class="card border-light ">
                                                         <div class="card-body">
@@ -79,7 +79,7 @@ const TestimonialsSection = () => {
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <div class="row px-5 pt-5 col-12 col-xl-12">
+                                            <div class="row pt-5 col-12 col-xl-12">
                                                 <div class="col-6 col-xl-6">
                                                     <div class="card border-light ">
                                                         <div class="card-body">
@@ -128,7 +128,7 @@ const TestimonialsSection = () => {
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <div class="row px-5 pt-5 col-12 col-xl-12">
+                                            <div class="row pt-5 col-12 col-xl-12">
                                                 <div class="col-6 col-xl-6">
                                                     <div class="card border-light ">
                                                         <div class="card-body">
