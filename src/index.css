@@ -18,12 +18,6 @@ h1, h2 {
 
 .social-icon {
   height: 20px;
-  padding-right: 10px;
-}
-
-.social-icon-bottom {
-  height: 20px;
-  padding-right: 30px;
 }
 
 .wrapper {
@@ -37,4 +31,8 @@ h1, h2 {
 
 .check-list {
   list-style-image: url("./assets/checkmark.svg");
+}
+
+.logo-footer {
+  max-width: 150px;
 }
