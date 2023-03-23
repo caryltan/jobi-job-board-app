@@ -11,12 +11,12 @@ const TestimonialsSection = () => {
 
                             <div class="col-12 col-lg-4 py-5">
                                 <div>
-                                    <p>TESTIMONIALS</p>
+                                    <p class="text-muted">TESTIMONIALS</p>
                                     <h2>Clients love Jobi</h2>
                                 </div>
                                 <div>
                                     <h3>A+ Rating</h3>
-                                    <p>4.8 avg rating makes us your best market place</p>
+                                    <p class="text-muted">4.8 avg rating makes us your best market place</p>
                                 </div>
                             </div>
 
