@@ -9,7 +9,7 @@ const HireTalents = () => {
                     <img src={Search} alt="screenshot of hireable talent listings" class="w-100" />
                 </div>
                 <div class="col-12 col-md-6 px-5 py-5">
-                    <p class="text-muted pt-5">Find Freelancers</p>
+                    <p class="text-muted pt-5 sub-heading">Find Freelancers</p>
                     <h2 class="pb-3">Hire Top Talents</h2>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">

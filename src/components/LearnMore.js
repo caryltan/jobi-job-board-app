@@ -35,7 +35,9 @@ const LearnMore = () => {
                             <p>Wide range of job categories</p>
                         </li>
                     </ul>
-                    <button type="button" class="btn btn-primary">Learn More</button>
+                    <div class="d-flex justify-content-sm-start justify-content-center">
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
                     </div>
                 </div>
                 </div>

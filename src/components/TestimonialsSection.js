@@ -11,7 +11,7 @@ const TestimonialsSection = () => {
 
                             <div class="col-12 col-lg-4 py-5">
                                 <div>
-                                    <p class="text-muted">TESTIMONIALS</p>
+                                    <p class="text-muted sub-heading">TESTIMONIALS</p>
                                     <h2>Clients love Jobi</h2>
                                 </div>
                                 <div>
