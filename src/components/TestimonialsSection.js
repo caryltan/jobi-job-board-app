@@ -30,9 +30,9 @@ const TestimonialsSection = () => {
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <div class="row pt-5 col-12 col-xl-12">
-                                                <div class="col-6 col-xl-6">
-                                                    <div class="card border-light ">
+                                            <div class="d-flex flex-column flex-sm-row justify-content-between pt-5 col-12 col-xl-12">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="card border-light mx-2 my-2">
                                                         <div class="card-body">
                                                             <div class="card-text">
                                                                 <h3>Impressive!</h3>
@@ -54,8 +54,8 @@ const TestimonialsSection = () => {
                                                     </div>
                                                 </div>
 
-                                                <div class="col-6 col-xl-6">
-                                                    <div class="card border-light ">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="card border-light mx-2 my-2">
                                                         <div class="card-body">
                                                             <div class="card-text">
                                                                 <h3>Impressive!</h3>
@@ -79,9 +79,9 @@ const TestimonialsSection = () => {
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <div class="row pt-5 col-12 col-xl-12">
-                                                <div class="col-6 col-xl-6">
-                                                    <div class="card border-light ">
+                                        <div class="d-flex flex-column flex-sm-row justify-content-between pt-5 col-12 col-xl-12">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="card border-light mx-2 my-2">
                                                         <div class="card-body">
                                                             <div class="card-text">
                                                                 <h3>Impressive!</h3>
@@ -103,8 +103,8 @@ const TestimonialsSection = () => {
                                                     </div>
                                                 </div>
 
-                                                <div class="col-6 col-xl-6">
-                                                    <div class="card border-light ">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="card border-light mx-2 my-2">
                                                         <div class="card-body">
                                                             <div class="card-text">
                                                                 <h3>Impressive!</h3>
@@ -128,9 +128,9 @@ const TestimonialsSection = () => {
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <div class="row pt-5 col-12 col-xl-12">
-                                                <div class="col-6 col-xl-6">
-                                                    <div class="card border-light ">
+                                        <div class="d-flex flex-column flex-sm-row justify-content-between pt-5 col-12 col-xl-12">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="card border-light mx-2 my-2">
                                                         <div class="card-body">
                                                             <div class="card-text">
                                                                 <h3>Impressive!</h3>
@@ -152,8 +152,8 @@ const TestimonialsSection = () => {
                                                     </div>
                                                 </div>
 
-                                                <div class="col-6 col-xl-6">
-                                                    <div class="card border-light ">
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="card border-light mx-2 my-2">
                                                         <div class="card-body">
                                                             <div class="card-text">
                                                                 <h3>Impressive!</h3>
