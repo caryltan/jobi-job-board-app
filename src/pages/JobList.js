@@ -29,32 +29,64 @@ const JobList = () => {
         )
     }, []);
 
+    const handleCategoryChange = (e) => {
+        console.log(e.target.value)
+    }
+
+    const handleChange = (e) => {
+        console.log(e.target.value)
+    }
+
     return (
         <>
-            <header class="bg-brand-light">
+            <header className="bg-brand-light">
                 <NavBar />
-                <div>
-                    <h1>Job listing</h1>
-                    <p>We deliver blazing fast & striking work solutions</p>
-                </div>
-                <div class="col-8 pb-5 pt-3">
-                    <div class="input-group mb-3">
-                        <div class="col-4">
-                            <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+
+                <div className="d-flex flex-column">
+                    <div className="d-flex justify-content-center">
+                        <div className="d-flex flex-column">
+                            <div>
+                                <h1 className="text-center">Job listing</h1>
+                            </div>
+                            <div>
+                                <p className="text-center">We deliver blazing fast & striking work solutions</p>
+                            </div>
                         </div>
-                        <div class="dropdown col-4">
-                            <button class="btn btn-white dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Category
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Design & Development</a></li>
-                                <li><a class="dropdown-item" href="#">Customer Marketing & Sales</a></li>
-                                <li><a class="dropdown-item" href="#">Business Marketing</a></li>
-                            </ul>
+                    </div>
+
+
+                    <div className="col-12 pb-5 pt-3">
+                        <div className="d-flex">
+                            <form className="input-group mb-4 justify-content-center">
+                                <div className="col-3">
+                                    <div className="form-floating">
+                                        <input type="search" class="form-control rounded-0" id="searchBar" onChange={handleChange} />
+                                        <label for="searchBar">What are you looking for?</label>
+                                    </div>
+                                </div>
+                                <div className="dropdown col-3">
+                                    <div className="form-floating">
+                                        <select
+                                            className="form-select rounded-0 form-control"
+                                            aria-label="category selection"
+                                            id="categorySelect"
+                                            onChange={handleCategoryChange}
+                                        >
+                                            <option value="All Categories">All Categories</option>
+                                            <option value="Design & Development">Design & Development</option>
+                                            <option value="Customer Marketing & Sales">Customer Marketing & Sales</option>
+                                            <option value="Business Marketing">Businesss Marketing</option>
+                                        </select>
+                                        <label for="categorySelect">Category</label>
+                                    </div>
+                                </div>
+
+                                <button type="button" className="btn btn-primary rounded-0">
+                                    Search
+                                </button>
+
+                            </form>
                         </div>
-                        <button type="button" class="btn btn-primary col-2">
-                            Search
-                        </button>
                     </div>
                 </div>
 
