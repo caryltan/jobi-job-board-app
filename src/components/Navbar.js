@@ -7,7 +7,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 const NavBar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <nav className="navbar navbar-expand-lg navbar-light bg-brand-light px-5">
                 <div className="container container-fluid">
                     <a className="navbar-brand col-4" href="#">
                         <img src={Logo} alt="Jobi logo" />

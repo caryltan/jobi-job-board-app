@@ -6,7 +6,7 @@ const Header = () => {
         <>
 
             <Navbar />
-            <div className="bg-light">
+            <div className="bg-brand-light">
                 <div className="wrapper">
                     <header className="container-fluid">
                         <div className="container-fluid mx-auto row curved">

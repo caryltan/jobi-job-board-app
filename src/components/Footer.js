@@ -4,10 +4,12 @@ import Instagram from "../assets/social-icons/instagram.svg";
 import Linkedin from "../assets/social-icons/linkedin-in.svg";
 import Pinterest from "../assets/social-icons/pinterest-p.svg";
 import Twitter from "../assets/social-icons/twitter.svg";
+import JobPortalSection from "./JobPortalSection";
 
 const Footer = () => {
     return (
         <>
+        <JobPortalSection />
             <footer className="pt-4">
                 <div className="wrapper">
                     <div className="row pb-4">
