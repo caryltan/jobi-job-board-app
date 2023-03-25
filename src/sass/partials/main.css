@@ -8177,6 +8177,11 @@ textarea.form-control-lg {
   background-color: #D3F3E2;
 }
 
+.bg-brand-ultra-light {
+  --bs-bg-opacity: 1;
+  background-color: #EFF6F3;
+}
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;

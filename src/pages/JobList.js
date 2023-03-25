@@ -6,7 +6,8 @@ import { ref, onValue, remove } from "firebase/database";
 import JobListCard from "../components/JobListCard";
 import NavBar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
-import Hamburger from "../assets/hamburger.svg"
+import HamburgerIcon from "../assets/hamburger.svg"
+import FilterIcon from "../assets/filter-icon.svg";
 
 const JobList = () => {
 
@@ -37,13 +38,14 @@ const JobList = () => {
 
     return (
         <>
+        <div className="bg-brand-ultra-light">
             <header className="bg-brand-light">
                 <NavBar />
                 <div className="d-flex flex-column">
                     <div className="d-flex justify-content-center">
                         <div className="d-flex flex-column">
                             <div>
-                                <h1 className="text-center">Job listing</h1>
+                                <h1 className="text-center">Job Listings</h1>
                             </div>
                             <div>
                                 <p className="text-center">We deliver blazing fast & striking work solutions</p>
@@ -57,11 +59,12 @@ const JobList = () => {
             <div className="wrapper">
                 <div className="d-flex justify-content-between">
                     <div className="d-flex flex-row">
-                        <button type="button" className="btn btn-primary">
-                            Filter
+                        <button type="button d-flex align-items-center" className="btn btn-primary">
+                            <img src={FilterIcon} alt="Filter listings icon" />Filter
                         </button>
                         <div>
-                            <p>All {jobListData.length} jobs found</p>
+                            {jobListData &&
+                            <p>All <strong>{jobListData.length}</strong> jobs found</p>}
                         </div>
                     </div>
                     <div className="d-flex">
@@ -78,7 +81,7 @@ const JobList = () => {
                                 <option value="Design & Development">Oldest</option>
                             </select>
                         </div>
-                        <button className="btn btn-primary"><img src={Hamburger} alt="" /></button>
+                        <button className="btn btn-primary"><img src={HamburgerIcon} alt="" /></button>
                     </div>
                 </div>
 
@@ -94,6 +97,7 @@ const JobList = () => {
                     }
 
                 </div>
+            </div>
             </div>
         </>
     )

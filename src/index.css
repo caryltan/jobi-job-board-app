@@ -20,6 +20,10 @@ h1, h2 {
   height: 20px;
 }
 
+.company-icon {
+  height: 50px;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;

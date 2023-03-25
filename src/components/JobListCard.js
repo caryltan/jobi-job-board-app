@@ -4,24 +4,47 @@ const JobListCard = (cardInfo) => {
     return (
         <>
             <div className="col-12 col-sm-6">
-                <div className="card border-light mx-2 my-2 bg-light">
+                <div className="card border-light mx-2 my-2 bg-white">
                     <div className="card-body">
                         <div className="card-text">
-                            <h3>{cardInfo.cardInfo.jobListing.company}</h3>
-                            {/* <img src={Rating} alt="Rating Star 5/5" /> */}
-                            <p>{cardInfo.cardInfo.jobListing.description}</p>
-                        </div>
-                        <div className="card-footer bg-transparent">
-                            <div className="d-flex flex-row">
-                                <div className="pe-3">
-                                    {/* <img src={ProfileImg} alt="Headshot of user profile" /> */}
-                                </div>
+                            <div className="d-flex">
                                 <div>
-                                    <h4>Zubayer Al Hasan</h4>
-                                    <p className="text-muted">Canada</p>
+                                    <img
+                                        src={cardInfo.cardInfo.jobListing.logo}
+                                        alt={`${cardInfo.cardInfo.jobListing.company} logo`}
+                                        className="company-icon"
+                                    />
+                                </div>
+                                <h3>{cardInfo.cardInfo.jobListing.jobTitle}</h3>
+                            </div>
+                            <div className="d-flex space-content-between">
+                                <div className="d-flex">
+                                    <p>{cardInfo.cardInfo.jobListing.salary}</p>
+                                </div>
+                                <div className="d-flex">
+                                    <p>{cardInfo.cardInfo.jobListing.expertise}</p>
+                                </div>
+                                <div className="d-flex">
+                                    <p>{cardInfo.cardInfo.jobListing.location}</p>
                                 </div>
                             </div>
+                            <div>
+                                <hr />
+                            </div>
+                            <div>
+                                <p>{cardInfo.cardInfo.jobListing.shortOverview}</p>
+                            </div>
                         </div>
+                        
+                            <div className="d-flex flex-row">
+                                <div>
+                                    <p>{cardInfo.cardInfo.jobListing.jobType}</p>
+                                </div>
+                                <div>
+                                    <button className="btn btn-primary">Apply</button>
+                                </div>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
