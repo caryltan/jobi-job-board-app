@@ -5,6 +5,8 @@ import { ref, onValue, remove } from "firebase/database";
 
 import JobListCard from "../components/JobListCard";
 import NavBar from "../components/Navbar";
+import SearchBar from "../components/SearchBar";
+import Hamburger from "../assets/hamburger.svg"
 
 const JobList = () => {
 
@@ -29,11 +31,7 @@ const JobList = () => {
         )
     }, []);
 
-    const handleCategoryChange = (e) => {
-        console.log(e.target.value)
-    }
-
-    const handleChange = (e) => {
+    const handleSortListings = (e) => {
         console.log(e.target.value)
     }
 
@@ -41,7 +39,6 @@ const JobList = () => {
         <>
             <header className="bg-brand-light">
                 <NavBar />
-
                 <div className="d-flex flex-column">
                     <div className="d-flex justify-content-center">
                         <div className="d-flex flex-column">
@@ -53,47 +50,38 @@ const JobList = () => {
                             </div>
                         </div>
                     </div>
-
-
-                    <div className="col-12 pb-5 pt-3">
-                        <div className="d-flex">
-                            <form className="input-group mb-4 justify-content-center">
-                                <div className="col-3">
-                                    <div className="form-floating">
-                                        <input type="search" class="form-control rounded-0" id="searchBar" onChange={handleChange} />
-                                        <label for="searchBar">What are you looking for?</label>
-                                    </div>
-                                </div>
-                                <div className="dropdown col-3">
-                                    <div className="form-floating">
-                                        <select
-                                            className="form-select rounded-0 form-control"
-                                            aria-label="category selection"
-                                            id="categorySelect"
-                                            onChange={handleCategoryChange}
-                                        >
-                                            <option value="All Categories">All Categories</option>
-                                            <option value="Design & Development">Design & Development</option>
-                                            <option value="Customer Marketing & Sales">Customer Marketing & Sales</option>
-                                            <option value="Business Marketing">Businesss Marketing</option>
-                                        </select>
-                                        <label for="categorySelect">Category</label>
-                                    </div>
-                                </div>
-
-                                <button type="button" className="btn btn-primary rounded-0">
-                                    Search
-                                </button>
-
-                            </form>
-                        </div>
-                    </div>
+                    <SearchBar />
                 </div>
-
-
             </header>
 
             <div className="wrapper">
+                <div className="d-flex justify-content-between">
+                    <div className="d-flex flex-row">
+                        <button type="button" className="btn btn-primary">
+                            Filter
+                        </button>
+                        <div>
+                            <p>All {jobListData.length} jobs found</p>
+                        </div>
+                    </div>
+                    <div className="d-flex">
+                        <label for="sortListings">Sort:</label>
+                        <div className="dropdown">
+
+                            <select
+                                className="form-select rounded form-control"
+                                aria-label="category selection"
+                                id="sortListings"
+                                onChange={handleSortListings}
+                            >
+                                <option value="All Categories">Latest</option>
+                                <option value="Design & Development">Oldest</option>
+                            </select>
+                        </div>
+                        <button className="btn btn-primary"><img src={Hamburger} alt="" /></button>
+                    </div>
+                </div>
+
                 <div className="row">
                     {jobListData && [...jobListData].reverse().map((jobListing, index) => {
                         console.log(jobListing)
