@@ -14,11 +14,10 @@ h1, h2 {
 
 .job-card {
   min-height: 300px;
-  height: auto;
 }
 
 .inner-card {
-  height: 150px;
+  height: 200px;
 }
 
 .blog {
@@ -39,7 +38,7 @@ h1, h2 {
 }
 
 .wrapper-80 {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 

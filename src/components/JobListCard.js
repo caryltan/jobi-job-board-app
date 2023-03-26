@@ -27,7 +27,7 @@ const JobListCard = (cardInfo) => {
 
     return (
         <>
-            <div className="col-12 col-sm-6">
+            <div className="col-12 col-xl-6">
                 <div className="card border-0 d-flex align-items-center justify-content-center mx-3 my-4 bg-white">
                     <div className="card-body py-4 px-4 job-card">
                         <div className="card-text">
@@ -51,7 +51,7 @@ const JobListCard = (cardInfo) => {
                                         }
 
                                     </div>
-                                    <div className="d-flex justify-content-between col-8">
+                                    <div className="d-flex justify-content-between col-6 col-xl-8 flex-row flex-xl-column flex-xxl-row ">
                                         <div className="d-flex">
                                             <p className="text-muted sub-heading">{cardInfo.cardInfo.jobListing.salary}</p>
                                         </div>
