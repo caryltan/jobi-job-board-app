@@ -1,15 +1,29 @@
 import VerifiedIcon from "../assets/verified-icon.svg";
 import NonVerifiedIcon from "../assets/non-verified-icon.svg";
+import { ReactComponent as BookmarkIcon } from '../assets/bookmark.svg';
+import { ReactComponent as BookmarkIconActive } from '../assets/bookmark-active.svg';
 import { useState, useEffect } from "react";
 
 const JobListCard = (cardInfo) => {
     const [isVerified, setIsVerified] = useState([]);
+    const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
         const newArray = cardInfo.cardInfo.jobListing.verifiedListing
-
         setIsVerified(newArray)
     })
+
+    const handleClick = () => {
+        setIsActive(false)
+    }
+
+    const handleActiveClick = () => {
+        setIsActive(false)
+    }
+
+    const handleInactiveClick = () => {
+        setIsActive(true)
+    }
 
     return (
         <>
@@ -26,10 +40,18 @@ const JobListCard = (cardInfo) => {
                                     />
                                 </div>
                                 <div className="col-10">
-                                    <div className="d-flex col-10">
+                                    <div className="d-flex col-12 justify-content-between">
                                         <h4>{cardInfo.cardInfo.jobListing.jobTitle}</h4>
+
+                                        {isActive ?
+                                            (<BookmarkIconActive onClick={handleActiveClick} className="bookmark"/>)
+                                            :
+
+                                            (<BookmarkIcon onClick={handleInactiveClick} className="bookmark"/>)
+                                        }
+
                                     </div>
-                                    <div className="d-flex justify-content-between col-10">
+                                    <div className="d-flex justify-content-between col-8">
                                         <div className="d-flex">
                                             <p className="text-muted sub-heading">{cardInfo.cardInfo.jobListing.salary}</p>
                                         </div>

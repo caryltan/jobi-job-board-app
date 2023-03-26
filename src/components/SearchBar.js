@@ -15,7 +15,7 @@ const SearchBar = () => {
                     <form className="input-group mb-4 justify-content-center">
                         <div className="col-3">
                             <div className="form-floating">
-                                <input type="search" class="form-control rounded-0 rounded-start" id="searchBar" onChange={handleChange} />
+                                <input type="search" className="form-control rounded-0 rounded-start" id="searchBar" onChange={handleChange} />
                                 <label for="searchBar">What are you looking for?</label>
                             </div>
                         </div>
