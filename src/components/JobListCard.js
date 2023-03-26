@@ -31,7 +31,7 @@ const JobListCard = (cardInfo) => {
                 <div className="card border-0 d-flex align-items-center justify-content-center mx-3 my-4 bg-white">
                     <div className="card-body py-4 px-4 job-card">
                         <div className="card-text">
-                            <div className="col-12 d-flex">
+                            <div className="col-12 d-flex job-card-heading">
                                 <div className="col-2">
                                     <img
                                         src={cardInfo.cardInfo.jobListing.logo}
@@ -39,27 +39,29 @@ const JobListCard = (cardInfo) => {
                                         className="company-icon"
                                     />
                                 </div>
-                                <div className="col-10">
-                                    <div className="d-flex col-12 justify-content-between">
-                                        <h4>{cardInfo.cardInfo.jobListing.jobTitle}</h4>
+                                <div className="col-10 d-flex justify-content-center justify-content-sm-start flex-column">
+                                    <div className="d-flex col-12 justify-content-sm-between flex-column flex-sm-row">
+                                        <div className="d-flex justify-content-center justify-content-sm-start">
+                                            <h4>{cardInfo.cardInfo.jobListing.jobTitle}</h4>
+                                        </div>
+                                        <div className="d-flex justify-content-center justify-content-sm-start">
+                                            {isActive ?
+                                                (<BookmarkIconActive onClick={handleActiveClick} className="bookmark" />)
+                                                :
 
-                                        {isActive ?
-                                            (<BookmarkIconActive onClick={handleActiveClick} className="bookmark"/>)
-                                            :
-
-                                            (<BookmarkIcon onClick={handleInactiveClick} className="bookmark"/>)
-                                        }
-
+                                                (<BookmarkIcon onClick={handleInactiveClick} className="bookmark" />)
+                                            }
+                                        </div>
                                     </div>
-                                    <div className="d-flex justify-content-between col-6 col-xl-8 flex-row flex-xl-column flex-xxl-row ">
-                                        <div className="d-flex">
-                                            <p className="text-muted sub-heading">{cardInfo.cardInfo.jobListing.salary}</p>
+                                    <div className="d-flex justify-content-between col-12 col-sm-6 col-xl-8 flex-sm-row flex-xl-column flex-xxl-row job-card-sub-heading">
+                                        <div className="d-flex justify-content-center">
+                                            <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.salary}</p>
                                         </div>
-                                        <div className="d-flex">
-                                            <p className="text-muted sub-heading">{cardInfo.cardInfo.jobListing.expertise}</p>
+                                        <div className="d-flex justify-content-center">
+                                            <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.expertise}</p>
                                         </div>
-                                        <div className="d-flex">
-                                            <p className="text-muted sub-heading">{cardInfo.cardInfo.jobListing.location}</p>
+                                        <div className="d-flex justify-content-center">
+                                            <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.location}</p>
                                         </div>
                                     </div>
                                 </div>

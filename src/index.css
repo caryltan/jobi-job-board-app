@@ -39,7 +39,7 @@ h2 {
 }
 
 .wrapper-80 {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -62,6 +62,29 @@ h2 {
 
 .bookmark {
   cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .wrapper-80 {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .job-card {
+    min-height: 400px;
+  }
+  .inner-card {
+    height: 250px;
+  }
+  .job-card-heading {
+    flex-direction: column; 
+    align-items: center;
+  }
+  .job-card-sub-heading {
+    flex-direction: column !important;
+  }
 }
 
 @media (max-width: 768px) {
