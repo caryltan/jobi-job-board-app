@@ -47,7 +47,7 @@ const JobListCard = (cardInfo) => {
                             </div>
                         </div>
 
-                        <div className="d-flex flex-column justify-content-between">
+                        <div className="d-flex flex-column inner-card justify-content-between">
                             <div>
                                 <p>{cardInfo.cardInfo.jobListing.shortOverview}</p>
                             </div>

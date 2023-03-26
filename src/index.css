@@ -17,6 +17,10 @@ h1, h2 {
   height: auto;
 }
 
+.inner-card {
+  height: 150px;
+}
+
 .blog {
   min-height: 450px;
 }
