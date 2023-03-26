@@ -53,14 +53,14 @@ const JobListCard = (cardInfo) => {
                                             }
                                         </div>
                                     </div>
-                                    <div className="d-flex justify-content-between col-12 col-sm-6 col-xl-8 flex-sm-row flex-xl-column flex-xxl-row job-card-sub-heading">
-                                        <div className="d-flex justify-content-center">
+                                    <div className="d-flex justify-content-between col-12 col-sm-6  col-xl-8 flex-sm-row flex-xl-column flex-xxl-row job-card-sub-heading">
+                                        <div className="d-flex justify-content-center justify-content-sm-start">
                                             <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.salary}</p>
                                         </div>
-                                        <div className="d-flex justify-content-center">
+                                        <div className="d-flex justify-content-center justify-content-sm-start">
                                             <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.expertise}</p>
                                         </div>
-                                        <div className="d-flex justify-content-center">
+                                        <div className="d-flex justify-content-center justify-content-sm-start">
                                             <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.location}</p>
                                         </div>
                                     </div>
