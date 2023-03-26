@@ -56,20 +56,20 @@ const JobList = () => {
                 </header>
 
                 <div className="wrapper-80">
-                    <div className="d-flex justify-content-between my-5 align-items-center">
-                        <div className="d-flex flex-row align-items-center">
-                            <div className="d-flex">
+                    <div className="d-flex justify-content-between my-5 flex-column flex-md-row">
+                        <div className="d-flex flex-row my-2">
+                            <div className="d-flex me-4">
                                 <button type="button d-flex align-items-center" className="btn btn-primary">
-                                    <img src={FilterIcon} alt="Filter listings icon" />Filter
+                                    <img src={FilterIcon} alt="Filter listings icon" className="mb-1 me-2"/>Filter
                                 </button>
                             </div >
                             <div className="d-flex align-items-center">
                                 {jobListData &&
-                                    <p>All <strong>{jobListData.length}</strong> jobs found</p>}
+                                    <p className="mb-0">All <strong>{jobListData.length}</strong> jobs found</p>}
                             </div>
                         </div>
-                        <div className="d-flex">
-                            <label for="sortListings">Sort:</label>
+                        <div className="d-flex align-items-center my-2">
+                            <label htmlFor="sortListings" className="me-3">Sort:</label>
                             <div className="dropdown">
 
                                 <select
@@ -78,11 +78,11 @@ const JobList = () => {
                                     id="sortListings"
                                     onChange={handleSortListings}
                                 >
-                                    <option value="All Categories">Latest</option>
-                                    <option value="Design & Development">Oldest</option>
+                                    <option value="Latest">Latest</option>
+                                    <option value="Oldest">Oldest</option>
                                 </select>
                             </div>
-                            <button className="btn btn-primary"><img src={HamburgerIcon} alt="" /></button>
+                            <button className="btn btn-primary ms-3"><img src={HamburgerIcon} alt="" /></button>
                         </div>
                     </div>
 

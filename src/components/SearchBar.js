@@ -7,20 +7,20 @@ const SearchBar = () => {
     const handleChange = (e) => {
         console.log(e.target.value)
     }
-    
+
     return (
         <>
             <div className="col-12 pb-5 pt-3">
                 <div className="d-flex">
-                    <form className="input-group mb-4 justify-content-center">
-                        <div className="col-3">
-                            <div className="form-floating">
+                    <form className="input-group mb-4 justify-content-center flex-column flex-sm-row">
+                        <div className="col-10 col-md-3 d-flex justify-content-center justify-content-start-sm">
+                            <div className="form-floating w-100">
                                 <input type="search" className="form-control rounded-0 rounded-start" id="searchBar" onChange={handleChange} />
-                                <label for="searchBar">What are you looking for?</label>
+                                <label htmlFor="searchBar">What are you looking for?</label>
                             </div>
                         </div>
-                        <div className="dropdown col-3">
-                            <div className="form-floating">
+                        <div className="dropdown col-10 col-md-3 d-flex justify-content-center">
+                            <div className="form-floating w-100">
                                 <select
                                     className="form-select rounded-0 form-control"
                                     aria-label="category selection"
@@ -32,13 +32,14 @@ const SearchBar = () => {
                                     <option value="Customer Marketing & Sales">Customer Marketing & Sales</option>
                                     <option value="Business Marketing">Businesss Marketing</option>
                                 </select>
-                                <label for="categorySelect">Category</label>
+                                <label htmlFor="categorySelect">Category</label>
                             </div>
                         </div>
-
-                        <button type="button" className="btn btn-primary rounded-0 rounded-end">
-                            Search
-                        </button>
+                        <div className="col-10 col-md-2">
+                            <button type="button" className="btn btn-primary rounded-0 rounded-end w-100 h-100">
+                                Search
+                            </button>
+                        </div>
 
                     </form>
                 </div>
