@@ -12,6 +12,11 @@ h1, h2 {
   min-height: 255px;
 }
 
+.job-card {
+  min-height: 300px;
+  height: auto;
+}
+
 .blog {
   min-height: 450px;
 }

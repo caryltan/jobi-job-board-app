@@ -14,8 +14,8 @@ const JobListCard = (cardInfo) => {
     return (
         <>
             <div className="col-12 col-sm-6">
-                <div className="card border-light mx-2 my-2 bg-white">
-                    <div className="card-body">
+                <div className="card border-0 d-flex align-items-center justify-content-center mx-3 my-4 bg-white">
+                    <div className="card-body py-4 px-4 job-card">
                         <div className="card-text">
                             <div className="col-12 d-flex">
                                 <div className="col-2">
@@ -45,45 +45,45 @@ const JobListCard = (cardInfo) => {
                             <div>
                                 <hr />
                             </div>
+                        </div>
+
+                        <div className="d-flex flex-column justify-content-between">
                             <div>
                                 <p>{cardInfo.cardInfo.jobListing.shortOverview}</p>
                             </div>
-                        </div>
+                            <div className="d-flex flex-row align-items-center justify-content-between">
 
-                        <div className="d-flex flex-row align-items-center justify-content-between">
-
-                            {isVerified ?
-                                (
-                                    <div className="d-flex align-items-center">
+                                {isVerified ?
+                                    (
                                         <div className="d-flex align-items-center">
-                                            <img src={VerifiedIcon} alt="Verified checkmark icon" className="social-icon" />
+                                            <div className="d-flex align-items-center">
+                                                <img src={VerifiedIcon} alt="Verified checkmark icon" className="social-icon" />
+                                            </div>
+                                            <div className="d-flex align-items-center">
+                                                <p className="mb-0 px-2"><strong>Verified Client</strong></p>
+                                            </div>
+                                            <div className="d-flex align-items-center px-5">
+                                                <p className="mb-0">{cardInfo.cardInfo.jobListing.jobType}</p>
+                                            </div>
                                         </div>
+                                    ) :
+                                    (
                                         <div className="d-flex align-items-center">
-                                            <p className="mb-0"><strong>Verified Client</strong></p>
+                                            <div className="d-flex align-items-center">
+                                                <img src={NonVerifiedIcon} alt="Non-Verified greyed out checkmark icon" className="social-icon" />
+                                            </div>
+                                            <div className="d-flex align-items-center">
+                                                <p className="mb-0 text-muted px-2">Non-Verified Client</p>
+                                            </div>
+                                            <div className="d-flex align-items-center px-5">
+                                                <p className="mb-0">{cardInfo.cardInfo.jobListing.jobType}</p>
+                                            </div>
                                         </div>
-                                        <div className="d-flex align-items-center px-5">
-                                            <p className="mb-0">{cardInfo.cardInfo.jobListing.jobType}</p>
-                                        </div>
-                                    </div>
-                                ) :
-                                (
-                                    <div className="d-flex align-items-center">
-                                        <div className="d-flex align-items-center">
-                                            <img src={NonVerifiedIcon} alt="Non-Verified greyed out checkmark icon" className="social-icon" />
-                                        </div>
-                                        <div className="d-flex align-items-center">
-                                            <p className="mb-0 text-muted">Non-Verified Client</p>
-                                        </div>
-                                        <div className="d-flex align-items-center px-5">
-                                            <p className="mb-0">{cardInfo.cardInfo.jobListing.jobType}</p>
-                                        </div>
-                                    </div>
-                                )
-                            }
-
-
-                            <div className="d-flex align-items-center">
-                                <button className="btn btn-primary">Apply</button>
+                                    )
+                                }
+                                <div className="d-flex align-items-center">
+                                    <button className="btn btn-primary">Apply</button>
+                                </div>
                             </div>
                         </div>
 

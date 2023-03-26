@@ -86,7 +86,7 @@ const JobList = () => {
                         </div>
                     </div>
 
-                    <div className="row">
+                    <div className="row pb-5">
                         {jobListData && [...jobListData].reverse().map((jobListing, index) => {
                             return (
                                 <>
