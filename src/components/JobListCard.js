@@ -2,9 +2,7 @@ import VerifiedIcon from "../assets/verified-icon.svg";
 import NonVerifiedIcon from "../assets/non-verified-icon.svg";
 import { useState, useEffect } from "react";
 
-const JobListCard = (cardInfo, verified) => {
-    // console.log(cardInfo.cardInfo.jobListing.verifiedListing)
-    console.log(verified)
+const JobListCard = (cardInfo) => {
     const [isVerified, setIsVerified] = useState([]);
 
     useEffect(() => {
@@ -19,27 +17,27 @@ const JobListCard = (cardInfo, verified) => {
                 <div className="card border-light mx-2 my-2 bg-white">
                     <div className="card-body">
                         <div className="card-text">
-                            <div className="col-12">
-                                <div>
+                            <div className="col-12 d-flex">
+                                <div className="col-2">
                                     <img
                                         src={cardInfo.cardInfo.jobListing.logo}
                                         alt={`${cardInfo.cardInfo.jobListing.company} logo`}
                                         className="company-icon"
                                     />
                                 </div>
-                                <div>
-                                    <div className="d-flex col-12">
+                                <div className="col-10">
+                                    <div className="d-flex col-10">
                                         <h4>{cardInfo.cardInfo.jobListing.jobTitle}</h4>
                                     </div>
-                                    <div className="d-flex justify-content-between col-12">
+                                    <div className="d-flex justify-content-between col-10">
                                         <div className="d-flex">
-                                            <p className="text-muted">{cardInfo.cardInfo.jobListing.salary}</p>
+                                            <p className="text-muted sub-heading">{cardInfo.cardInfo.jobListing.salary}</p>
                                         </div>
                                         <div className="d-flex">
-                                            <p className="text-muted">{cardInfo.cardInfo.jobListing.expertise}</p>
+                                            <p className="text-muted sub-heading">{cardInfo.cardInfo.jobListing.expertise}</p>
                                         </div>
                                         <div className="d-flex">
-                                            <p className="text-muted">{cardInfo.cardInfo.jobListing.location}</p>
+                                            <p className="text-muted sub-heading">{cardInfo.cardInfo.jobListing.location}</p>
                                         </div>
                                     </div>
                                 </div>

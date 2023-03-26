@@ -37,70 +37,70 @@ const JobList = () => {
 
     return (
         <>
-        <div className="bg-brand-ultra-light">
-            <header className="bg-brand-dark pt-4">
-                <NavBarDark />
-                <div className="d-flex flex-column pt-4">
-                    <div className="d-flex justify-content-center">
-                        <div className="d-flex flex-column">
-                            <div>
-                                <h1 className="text-center text-white">Job Listings</h1>
+            <div className="bg-brand-ultra-light">
+                <header className="bg-brand-dark pt-4">
+                    <NavBarDark />
+                    <div className="d-flex flex-column pt-4">
+                        <div className="d-flex justify-content-center">
+                            <div className="d-flex flex-column">
+                                <div>
+                                    <h1 className="text-center text-white">Job Listings</h1>
+                                </div>
+                                <div>
+                                    <p className="text-center text-white">We deliver blazing fast & striking work solutions</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-center text-white">We deliver blazing fast & striking work solutions</p>
+                        </div>
+                        <SearchBar />
+                    </div>
+                </header>
+
+                <div className="wrapper-80">
+                    <div className="d-flex justify-content-between my-5 align-items-center">
+                        <div className="d-flex flex-row align-items-center">
+                            <div className="d-flex">
+                                <button type="button d-flex align-items-center" className="btn btn-primary">
+                                    <img src={FilterIcon} alt="Filter listings icon" />Filter
+                                </button>
+                            </div >
+                            <div className="d-flex align-items-center">
+                                {jobListData &&
+                                    <p>All <strong>{jobListData.length}</strong> jobs found</p>}
                             </div>
                         </div>
-                    </div>
-                    <SearchBar />
-                </div>
-            </header>
+                        <div className="d-flex">
+                            <label for="sortListings">Sort:</label>
+                            <div className="dropdown">
 
-            <div className="wrapper">
-                <div className="d-flex justify-content-between">
-                    <div className="d-flex flex-row my-5">
-                        <div>
-                        <button type="button d-flex align-items-center" className="btn btn-primary">
-                            <img src={FilterIcon} alt="Filter listings icon" />Filter
-                        </button>
-                        </div>
-                        <div>
-                            {jobListData &&
-                            <p>All <strong>{jobListData.length}</strong> jobs found</p>}
+                                <select
+                                    className="form-select rounded form-control"
+                                    aria-label="category selection"
+                                    id="sortListings"
+                                    onChange={handleSortListings}
+                                >
+                                    <option value="All Categories">Latest</option>
+                                    <option value="Design & Development">Oldest</option>
+                                </select>
+                            </div>
+                            <button className="btn btn-primary"><img src={HamburgerIcon} alt="" /></button>
                         </div>
                     </div>
-                    <div className="d-flex">
-                        <label for="sortListings">Sort:</label>
-                        <div className="dropdown">
 
-                            <select
-                                className="form-select rounded form-control"
-                                aria-label="category selection"
-                                id="sortListings"
-                                onChange={handleSortListings}
-                            >
-                                <option value="All Categories">Latest</option>
-                                <option value="Design & Development">Oldest</option>
-                            </select>
-                        </div>
-                        <button className="btn btn-primary"><img src={HamburgerIcon} alt="" /></button>
+                    <div className="row">
+                        {jobListData && [...jobListData].reverse().map((jobListing, index) => {
+                            return (
+                                <>
+                                    <JobListCard
+                                        key={index}
+                                        cardInfo={jobListing}
+                                    />
+                                </>
+                            )
+                        })
+                        }
+
                     </div>
                 </div>
-
-                <div className="row">
-                    {jobListData && [...jobListData].reverse().map((jobListing, index) => {
-                        return (
-                            <>
-                                <JobListCard 
-                                key={index} 
-                                cardInfo={jobListing} 
-                                />
-                            </>
-                        )
-                    })
-                    }
-
-                </div>
-            </div>
             </div>
         </>
     )

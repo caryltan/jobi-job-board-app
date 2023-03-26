@@ -29,6 +29,11 @@ h1, h2 {
   margin: 0 auto;
 }
 
+.wrapper-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .accordion-item {
   border-bottom: 2px solid black;
 }
