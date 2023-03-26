@@ -27,7 +27,6 @@ const JobList = () => {
                 newState.push({ key: key, jobListing: dataResponse[key] });
             }
             setJobListData(newState);
-            console.log(dataResponse)
         }
         )
     }, []);
@@ -87,10 +86,12 @@ const JobList = () => {
 
                 <div className="row">
                     {jobListData && [...jobListData].reverse().map((jobListing, index) => {
-                        console.log(jobListing)
                         return (
                             <>
-                                <JobListCard key={index} cardInfo={jobListing} />
+                                <JobListCard 
+                                key={index} 
+                                cardInfo={jobListing} 
+                                />
                             </>
                         )
                     })
