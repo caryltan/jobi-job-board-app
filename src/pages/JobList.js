@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ref, onValue, remove } from "firebase/database";
 
 import JobListCard from "../components/JobListCard";
-import NavBar from "../components/Navbar";
+import NavBarDark from "../components/NavBarDark";
 import SearchBar from "../components/SearchBar";
 import HamburgerIcon from "../assets/hamburger.svg"
 import FilterIcon from "../assets/filter-icon.svg";
@@ -38,16 +38,16 @@ const JobList = () => {
     return (
         <>
         <div className="bg-brand-ultra-light">
-            <header className="bg-brand-light">
-                <NavBar />
-                <div className="d-flex flex-column">
+            <header className="bg-brand-dark pt-4">
+                <NavBarDark />
+                <div className="d-flex flex-column pt-4">
                     <div className="d-flex justify-content-center">
                         <div className="d-flex flex-column">
                             <div>
-                                <h1 className="text-center">Job Listings</h1>
+                                <h1 className="text-center text-white">Job Listings</h1>
                             </div>
                             <div>
-                                <p className="text-center">We deliver blazing fast & striking work solutions</p>
+                                <p className="text-center text-white">We deliver blazing fast & striking work solutions</p>
                             </div>
                         </div>
                     </div>
@@ -57,10 +57,12 @@ const JobList = () => {
 
             <div className="wrapper">
                 <div className="d-flex justify-content-between">
-                    <div className="d-flex flex-row">
+                    <div className="d-flex flex-row my-5">
+                        <div>
                         <button type="button d-flex align-items-center" className="btn btn-primary">
                             <img src={FilterIcon} alt="Filter listings icon" />Filter
                         </button>
+                        </div>
                         <div>
                             {jobListData &&
                             <p>All <strong>{jobListData.length}</strong> jobs found</p>}

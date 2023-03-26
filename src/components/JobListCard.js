@@ -19,7 +19,7 @@ const JobListCard = (cardInfo, verified) => {
                 <div className="card border-light mx-2 my-2 bg-white">
                     <div className="card-body">
                         <div className="card-text">
-                            <div className="d-flex">
+                            <div className="col-12">
                                 <div>
                                     <img
                                         src={cardInfo.cardInfo.jobListing.logo}
@@ -28,10 +28,10 @@ const JobListCard = (cardInfo, verified) => {
                                     />
                                 </div>
                                 <div>
-                                    <div>
+                                    <div className="d-flex col-12">
                                         <h4>{cardInfo.cardInfo.jobListing.jobTitle}</h4>
                                     </div>
-                                    <div className="d-flex">
+                                    <div className="d-flex justify-content-between col-12">
                                         <div className="d-flex">
                                             <p className="text-muted">{cardInfo.cardInfo.jobListing.salary}</p>
                                         </div>
