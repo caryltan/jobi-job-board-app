@@ -32,14 +32,14 @@ const JobListCard = (cardInfo) => {
                     <div className="card-body py-4 px-4 job-card">
                         <div className="card-text">
                             <div className="col-12 d-flex job-card-heading">
-                                <div className="col-2">
+                                <div className="col-2 d-flex justify-content-center justify-content-sm-start">
                                     <img
                                         src={cardInfo.cardInfo.jobListing.logo}
                                         alt={`${cardInfo.cardInfo.jobListing.company} logo`}
                                         className="company-icon"
                                     />
                                 </div>
-                                <div className="col-10 d-flex justify-content-center justify-content-sm-start flex-column">
+                                <div className="col-10 d-flex justify-content-center flex-column">
                                     <div className="d-flex col-12 justify-content-sm-between flex-column flex-sm-row">
                                         <div className="d-flex justify-content-center justify-content-sm-start">
                                             <h4>{cardInfo.cardInfo.jobListing.jobTitle}</h4>
@@ -53,7 +53,9 @@ const JobListCard = (cardInfo) => {
                                             }
                                         </div>
                                     </div>
-                                    <div className="d-flex justify-content-between col-12 col-sm-6  col-xl-8 flex-sm-row flex-xl-column flex-xxl-row job-card-sub-heading">
+
+                                    {/* edit here */}
+                                    <div className="d-flex justify-content-between col-12 col-sm-6  col-md-8 col-xl-8 flex-md-row flex-column flex-xl-row flex-lg-column job-card-sub-heading">
                                         <div className="d-flex justify-content-center justify-content-sm-start">
                                             <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.salary}</p>
                                         </div>
