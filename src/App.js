@@ -1,10 +1,16 @@
 import "./sass/partials/main.css";
-import { Link, Routes, Route } from 'react-router-dom';
+import {
+  Link,
+  Routes,
+  Route,
+  useParams,
+} from 'react-router-dom';
 import Home from "./pages/Home.js";
 import Footer from "./components/Footer.js"
 import Header from "./components/Header.js"
 import bootstrap from 'bootstrap'
 import JobList from "./pages/JobList";
+import JobPageIndv from "./pages/JobPageIndv";
 
 function App() {
   return (
@@ -12,7 +18,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={ <Home /> } />
-        <Route path="/explore" element={ <JobList /> } />  
+        <Route path="/explore" element={ <JobList /> } /> 
+        <Route path="/:jobListingID" element={ <JobPageIndv /> } />   
       </Routes>
 
       <Footer />

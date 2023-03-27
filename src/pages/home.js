@@ -5,7 +5,6 @@ import Categories from "../components/CategoriesSection";
 import HireTalents from "../components/HireTalents";
 import TestimonialsSection from "../components/TestimonialsSection";
 import BlogSection from "../components/BlogSection";
-import JobPortalSection from "../components/JobPortalSection";
 
 const home = () => {
     return (

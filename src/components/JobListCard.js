@@ -3,14 +3,19 @@ import NonVerifiedIcon from "../assets/non-verified-icon.svg";
 import { ReactComponent as BookmarkIcon } from '../assets/bookmark.svg';
 import { ReactComponent as BookmarkIconActive } from '../assets/bookmark-active.svg';
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+import JobPageIndv from "../pages/JobPageIndv";
 
-const JobListCard = (cardInfo) => {
+const JobListCard = (cardInfo, index) => {
     const [isVerified, setIsVerified] = useState([]);
     const [isActive, setIsActive] = useState(false);
+    const [jobInfo, setJobInfo] = useState();
 
     useEffect(() => {
-        const newArray = cardInfo.cardInfo.jobListing.verifiedListing
-        setIsVerified(newArray)
+        const newArray = cardInfo.cardInfo.jobListing.verifiedListing;
+        setIsVerified(newArray);
+        const storedJobInfo = cardInfo.cardInfo.jobListing;
+        setJobInfo(storedJobInfo);
     })
 
     const handleClick = () => {
@@ -54,7 +59,7 @@ const JobListCard = (cardInfo) => {
                                         </div>
                                     </div>
 
-                                    
+
                                     <div className="d-flex justify-content-between col-12 col-md-10 col-lg-8 col-xl-10 job-card-sub-heading my-2">
                                         <div className="d-flex justify-content-center justify-content-sm-start">
                                             <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.salary}</p>
@@ -108,7 +113,15 @@ const JobListCard = (cardInfo) => {
                                     )
                                 }
                                 <div className="d-flex align-items-center my-2">
-                                    <button className="btn btn-primary">Apply</button>
+                                    <Link
+                                        className="btn btn-primary"
+                                        to={`/${cardInfo.cardInfo.jobListing.id}`}
+                                        state={ jobInfo }
+                                        key={index}
+                                    >
+                                        Apply
+                                    </Link>
+
                                 </div>
                             </div>
                         </div>
