@@ -32,14 +32,14 @@ const JobListCard = (cardInfo) => {
                     <div className="card-body py-4 px-4 job-card">
                         <div className="card-text">
                             <div className="col-12 d-flex job-card-heading">
-                                <div className="col-2">
+                                <div className="col-2 col-lg-1 col-xl-2">
                                     <img
                                         src={cardInfo.cardInfo.jobListing.logo}
                                         alt={`${cardInfo.cardInfo.jobListing.company} logo`}
                                         className="company-icon"
                                     />
                                 </div>
-                                <div className="col-10">
+                                <div className="col-10 col-lg-11 col-xl-10">
                                     <div className="d-flex col-12 justify-content-sm-between flex-column flex-sm-row">
                                         <div className="d-flex justify-content-center justify-content-sm-start">
                                             <h4>{cardInfo.cardInfo.jobListing.jobTitle}</h4>
@@ -55,7 +55,7 @@ const JobListCard = (cardInfo) => {
                                     </div>
 
                                     {/* edit here */}
-                                    <div className="d-flex justify-content-between col-12 col-md-10 col-lg-8 col-xl-10 job-card-sub-heading">
+                                    <div className="d-flex justify-content-between col-12 col-md-10 col-lg-8 col-xl-10 job-card-sub-heading my-2">
                                         <div className="d-flex justify-content-center justify-content-sm-start">
                                             <p className="text-muted sub-heading text-center">{cardInfo.cardInfo.jobListing.salary}</p>
                                         </div>
