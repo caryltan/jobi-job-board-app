@@ -17,6 +17,10 @@ h2 {
   min-height: 300px;
 }
 
+.job-heading {
+  font-size: 1.3rem !important;
+}
+
 .inner-card {
   min-height: 200px;
 }
@@ -117,4 +121,7 @@ h2 {
   }
 }
 
-
+.bullet-icon {
+  height: 30px;
+  width: 30px;
+}

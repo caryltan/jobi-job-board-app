@@ -23,25 +23,48 @@ const JobPageIndv = () => {
 
     return (
         <>
-            <header>
+            <header className="bg-brand-dark pt-4">
                 <NavBarDark />
+                <div className="d-flex flex-column pt-4 pb-5">
+                    <div className="d-flex justify-content-center">
+                        <div className="d-flex flex-column">
+                            <div>
+                                <h1 className="text-center text-white">Job Details</h1>
+                            </div>
+                            <div>
+                                <p className="text-center text-white">Is this the right fit for you? View company job details & requirements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
-            <main className="wrapper-80 flex-row d-flex py-5 justify-content-between">
+
+            <main className="wrapper flex-row d-flex py-5 justify-content-between">
                 <div className="col-8">
                     <div>
                         <p><span className="text-muted">{location.state.date}</span> by <strong>{location.state.company}</strong></p>
                         <h2>{location.state.jobTitle}</h2>
                     </div>
-                    <section className="rounded-brand border border-grey">
-                        <h3>Overview</h3>
+                    <section className="rounded-brand border border-grey my-4 px-4 py-3">
+                        <div className="d-flex py-3">
+                            <img src={BulletOne} alt="bullet point one" className="bullet-icon me-2" />
+                            <h3 className="job-heading">Overview</h3>
+                        </div>
                         <p>{location.state.longOverview}</p>
                     </section>
-                    <section>
-                        <h3>Job Description</h3>
+                    <section className="rounded-brand border border-grey my-4 px-4 py-3">
+                        <div className="d-flex py-3">
+                            <img src={BulletTwo} alt="bullet point two" className="bullet-icon me-2" />
+                            <h3 className="job-heading">Job Description</h3>
+                        </div>
                         <p>{location.state.jobDescription}</p>
                     </section>
-                    <section>
-                        <h3>Responsibilities</h3>
+                    <section className="rounded-brand border border-grey my-4 px-4 py-3">
+                        <div className="d-flex py-3">
+                            <img src={BulletThree} alt="bullet point three" className="bullet-icon me-2" />
+                            <h3 className="job-heading">Responsibilities</h3>
+                        </div>
+
                         <ul className="check-list-job">
                             {[...location.state.responsibilities].map((responsibility) => {
                                 return (
@@ -53,8 +76,12 @@ const JobPageIndv = () => {
                             }
                         </ul>
                     </section>
-                    <section>
-                        <h3>Required Skills</h3>
+                    <section className="rounded-brand border border-grey my-4 px-4 py-3">
+                        <div className="d-flex py-3">
+                            <img src={BulletFour} alt="bullet point four" className="bullet-icon me-2" />
+                            <h3 className="job-heading">Required Skills</h3>
+                        </div>
+
                         <ul className="check-list-job">
                             {[...location.state.requiredSkills].map((skill) => {
                                 return (
@@ -66,8 +93,12 @@ const JobPageIndv = () => {
                             }
                         </ul>
                     </section>
-                    <section>
-                        <h3>Benefits</h3>
+                    <section className="rounded-brand border border-grey my-4 px-4 py-3">
+                        <div className="d-flex py-3">
+                            <img src={BulletFive} alt="bullet point five" className="bullet-icon me-2" />
+                            <h3 className="job-heading">Benefits</h3>
+                        </div>
+
                         <ul className="check-list-job">
                             {[...location.state.benefits].map((benefit) => {
                                 return (
@@ -83,15 +114,15 @@ const JobPageIndv = () => {
 
 
 
-                <div className="col-3 bg-brand-ultra-light">
-                    <section>
+                <div className="col-3">
+                    <section className="bg-brand-ultra-light">
                         <section>
                             <div>
                                 <img src={location.state.logo} alt={`${location.state.company} logo`} />
                                 <p>{location.state.company}</p>
                             </div>
                             <div>
-                                <Link className="btn btn-primary">Visit Website</Link>
+                                <Link to="/" className="btn btn-primary">Visit Website</Link>
                             </div>
                         </section>
                         <section>
