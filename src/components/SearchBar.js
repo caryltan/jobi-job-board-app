@@ -10,16 +10,16 @@ const SearchBar = () => {
 
     return (
         <>
-            <div className="col-12 pb-5 pt-3 d-flex justify-content-center" >
+            <div className="col-12 pb-5 pt-3 d-flex" >
                 
-                    <form className="input-group mb-3 justify-content-center flex-column flex-sm-row d-flex">
-                        <div className="col-10 col-md-3 d-flex justify-content-center my-2">
+                    <form className="input-group mb-3 d-flex justify-content-center">
+                        <div className="col-10 col-md-3 d-flex my-2">
                             <div className="form-floating w-100">
                                 <input type="search" className="form-control rounded-responsive-start" id="searchBar" onChange={handleChange} />
                                 <label htmlFor="searchBar">What are you looking for?</label>
                             </div>
                         </div>
-                        <div className="dropdown col-10 col-md-3 d-flex justify-content-center my-2">
+                        <div className="dropdown col-10 col-md-3 d-flex my-2">
                             <div className="form-floating w-100">
                                 <select
                                     className="form-select rounded-responsive form-control"
