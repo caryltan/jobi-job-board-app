@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/explore" element={ <JobList /> } /> 
-        <Route path="/:jobListingID" element={ <JobPageIndv /> } />   
+        <Route path="/job-listings/:jobListingID" element={ <JobPageIndv /> } />   
       </Routes>
 
       <Footer />

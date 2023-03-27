@@ -115,7 +115,7 @@ const JobListCard = (cardInfo, index) => {
                                 <div className="d-flex align-items-center my-2">
                                     <Link
                                         className="btn btn-primary"
-                                        to={`/${cardInfo.cardInfo.jobListing.id}`}
+                                        to={`/job-listings/${cardInfo.cardInfo.jobListing.id}`}
                                         state={ jobInfo }
                                         key={index}
                                     >

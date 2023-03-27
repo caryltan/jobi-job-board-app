@@ -7189,6 +7189,11 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
 }
 
+.border-grey {
+  --bs-border-opacity: 1;
+  border-color: #C4C4C4 !important;
+}
+
 .border-secondary {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
@@ -8264,6 +8269,10 @@ textarea.form-control-lg {
 
 .rounded {
   border-radius: var(--bs-border-radius) !important;
+}
+
+.rounded-brand {
+  border-radius: 15px !important;
 }
 
 .rounded-0 {
