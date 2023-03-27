@@ -32,19 +32,19 @@ const JobListCard = (cardInfo) => {
                     <div className="card-body py-4 px-4 job-card">
                         <div className="card-text">
                             <div className="col-12 d-flex job-card-heading">
-                                <div className="col-2 col-lg-1 col-xl-2">
+                                <div className="col-2 col-lg-1 col-xl-2 d-flex justify-content-center justify-content-sm-start">
                                     <img
                                         src={cardInfo.cardInfo.jobListing.logo}
                                         alt={`${cardInfo.cardInfo.jobListing.company} logo`}
-                                        className="company-icon"
+                                        className="company-icon my-2"
                                     />
                                 </div>
                                 <div className="col-10 col-lg-11 col-xl-10">
                                     <div className="d-flex col-12 justify-content-sm-between flex-column flex-sm-row">
                                         <div className="d-flex justify-content-center justify-content-sm-start">
-                                            <h4>{cardInfo.cardInfo.jobListing.jobTitle}</h4>
+                                            <h4 className="text-center text-sm-start my-2">{cardInfo.cardInfo.jobListing.jobTitle}</h4>
                                         </div>
-                                        <div className="d-flex justify-content-center justify-content-sm-start">
+                                        <div className="d-flex justify-content-center justify-content-sm-start my-2">
                                             {isActive ?
                                                 (<BookmarkIconActive onClick={handleActiveClick} className="bookmark" />)
                                                 :
