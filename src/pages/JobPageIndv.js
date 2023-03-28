@@ -12,7 +12,9 @@ import BulletTwo from "../assets/bullet-two.svg";
 import BulletThree from "../assets/bullet-three.svg";
 import BulletFour from "../assets/bullet-four.svg";
 import BulletFive from "../assets/bullet-five.svg";
-import Checkmark from "../assets/checkmark.svg";
+import FacebookIcon from "../assets/social-icons/facebook-f.svg";
+import TwitterIcon from "../assets/social-icons/twitter.svg";
+import ShareIcon from "../assets/share-icon.png";
 
 const JobPageIndv = () => {
 
@@ -47,6 +49,20 @@ const JobPageIndv = () => {
                         <p><span className="text-muted">{location.state.date}</span> by <strong>{location.state.company}</strong></p>
                         <h2>{location.state.jobTitle}</h2>
                     </div>
+                    <section className="d-flex flex-row">
+                        <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button">
+                            <img src={FacebookIcon} alt="Facebook Icon" className="social-icon-small me-2"/>
+                            <p className="mb-0 job-details ">Facebook</p>
+                        </div>
+                        <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button">
+                            <img src={TwitterIcon} alt="Twitter Icon" className="social-icon-small me-2"/>
+                            <p className="mb-0 job-details ">Twitter</p>
+                        </div>
+                        <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button">
+                            <img src={ShareIcon} alt="Share Icon" className="social-icon-small me-2"/>
+                            <p className="mb-0 job-details ">Copy</p>
+                        </div>
+                    </section>
                     <section className="rounded-brand border border-grey my-4 px-4 py-3">
                         <div className="d-flex py-3 align-items-center">
                             <img src={BulletOne} alt="bullet point one" className="bullet-icon me-2" />
