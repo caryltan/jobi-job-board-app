@@ -73,6 +73,14 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
+.job-sub-heading {
+  font-size: 0.85rem;
+}
+
+.job-details {
+  font-size: 0.9rem;
+}
+
 .bookmark {
   cursor: pointer;
 }
@@ -129,4 +137,8 @@ h2 {
 .bullet-icon {
   height: 30px;
   width: 30px;
+}
+
+.tag-text {
+  font-size: 0.75rem;
 }

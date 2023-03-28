@@ -123,10 +123,10 @@ const JobPageIndv = () => {
 
 
                 <div className="col-3">
-                    <section className="bg-brand-ultra-light py-5">
-                        <section>
+                    <section className="bg-brand-ultra-light pt-5 pb-4">
+                        <section className="pb-4">
                             <div className="d-flex justify-content-center">
-                                <img src={location.state.logo} alt={`${location.state.company} logo`} className="company-icon-large" />
+                                <img src={location.state.logo} alt={`${location.state.company} logo`} className="company-icon-large pb-3" />
                             </div>
                             <div className="d-flex justify-content-center">
                                 <p>{location.state.company}</p>
@@ -141,45 +141,77 @@ const JobPageIndv = () => {
                                 </a>
                             </div>
                         </section>
-                        <section>
-                            <div>
-                                <p className="text-muted">Salary</p>
-                                <p><strong>{location.state.salary}</strong></p>
+
+
+                        <hr className="pb-4 mx-auto my-auto w-80" />
+
+
+                        <section className="row px-4">
+                            <div className="col-6 px-4">
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="text-muted job-sub-heading mb-1">Salary</p>
+                                </div>
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="job-details"><strong>{location.state.salary}</strong></p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-muted">Expertise</p>
-                                <p><strong>{location.state.expertise}</strong></p>
+                            <div className="col-6 px-4">
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="text-muted job-sub-heading mb-1">Expertise</p>
+                                </div>
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="job-details"><strong>{location.state.expertise}</strong></p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-muted">Location</p>
-                                <p><strong>{location.state.location}</strong></p>
+                            <div className="col-6 px-4">
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="text-muted job-sub-heading mb-1">Location</p>
+                                </div>
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="job-details"><strong>{location.state.location}</strong></p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-muted">Job Type</p>
-                                <p><strong>{location.state.jobType}</strong></p>
+                            <div className="col-6 px-4">
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="text-muted job-sub-heading mb-1 justify-content-sm-start">Job Type</p>
+                                </div>
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="job-details"><strong>{location.state.jobType}</strong></p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-muted">Date</p>
-                                <p><strong>{location.state.date}</strong></p>
+                            <div className="col-6 px-4">
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="text-muted job-sub-heading mb-1">Date</p>
+                                </div>
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="job-details"><strong>{location.state.date}</strong></p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-muted">Experience</p>
-                                <p><strong>{location.state.experience}</strong></p>
+                            <div className="col-6 px-4">
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="text-muted job-sub-heading mb-1">Experience</p>
+                                </div>
+                                <div className="d-flex justify-content-center justify-content-sm-start">
+                                    <p className="job-details"><strong>{location.state.experience}</strong></p>
+                                </div>
                             </div>
                         </section>
                         <section>
-                            <ul>
+                            <div className="list-unstyled">
                                 {[...location.state.tags].map((tag) => {
                                     return (
                                         <>
-                                            <li>{tag}</li>
+                                            <div className="btn btn-primary">
+                                                <p className="tag-text">{tag}</p>
+                                            </div>
                                         </>
                                     )
                                 })
                                 }
-                            </ul>
+                            </div>
                         </section>
-                        <section>
+                        <section className="col-12 d-flex justify-content-center pt-4">
+
                             <a
                                 href="https://www.google.ca/"
                                 target="_blank"
@@ -187,6 +219,7 @@ const JobPageIndv = () => {
                             >
                                 Apply Now
                             </a>
+
                         </section>
                     </section>
                 </div>
