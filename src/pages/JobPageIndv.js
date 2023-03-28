@@ -21,7 +21,12 @@ const JobPageIndv = () => {
 
     const location = useLocation();
 
-
+    const CopyLink = (e) => {
+        e.preventDefault();
+        const queryParameters = window.location.href.split('/');
+        const lastSegment = queryParameters.pop()
+        navigator.clipboard.writeText(`https://jobi-job-board-app.netlify.app/job-listings/${lastSegment}`)
+    }
 
 
     return (
@@ -49,7 +54,7 @@ const JobPageIndv = () => {
                         <p><span className="text-muted">{location.state.date}</span> by <strong>{location.state.company}</strong></p>
                         <h2>{location.state.jobTitle}</h2>
                     </div>
-                    <section className="d-flex flex-row">
+                    <section className="d-flex flex-row py-3">
                         <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button">
                             <img src={FacebookIcon} alt="Facebook Icon" className="social-icon-small me-2"/>
                             <p className="mb-0 job-details ">Facebook</p>
@@ -58,7 +63,7 @@ const JobPageIndv = () => {
                             <img src={TwitterIcon} alt="Twitter Icon" className="social-icon-small me-2"/>
                             <p className="mb-0 job-details ">Twitter</p>
                         </div>
-                        <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button">
+                        <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button" onClick={CopyLink}>
                             <img src={ShareIcon} alt="Share Icon" className="social-icon-small me-2"/>
                             <p className="mb-0 job-details ">Copy</p>
                         </div>
