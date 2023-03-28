@@ -48,8 +48,8 @@ const JobPageIndv = () => {
                 </div>
             </header>
 
-            <main className="wrapper flex-column flex-sm-row d-flex py-5 justify-content-between">
-                <div className="col-12 col-sm-8">
+            <main className="wrapper flex-column flex-lg-row d-flex py-5 justify-content-between">
+                <div className="col-12 col-lg-7 col-xl-8">
                     <div>
                         <p><span className="text-muted">{location.state.date}</span> by <strong>{location.state.company}</strong></p>
                         <h2>{location.state.jobTitle}</h2>
@@ -143,7 +143,7 @@ const JobPageIndv = () => {
 
 
 
-                <div className="col-12 col-sm-3">
+                <div className="col-12 col-lg-4 col-xl-3">
                     <section className="bg-brand-ultra-light pt-5 pb-4">
                         <section className="pb-4">
                             <div className="d-flex justify-content-center">
