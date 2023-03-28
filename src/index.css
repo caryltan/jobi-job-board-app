@@ -153,3 +153,25 @@ h2 {
 .tag-text {
   font-size: 0.75rem;
 }
+
+.header-image {
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  max-width: 35%;
+}
+
+.header-bg {
+  height: 500px;
+}
+
+.bottom-header-container {
+  position: relative;
+}
+
+/* .header-bg {
+  background-image: url("./assets/header-bg-transparent.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+} */

@@ -15,9 +15,9 @@ import BulletFive from "../assets/bullet-five.svg";
 import FacebookIcon from "../assets/social-icons/facebook-f.svg";
 import TwitterIcon from "../assets/social-icons/twitter.svg";
 import ShareIcon from "../assets/share-icon.png";
+import RelatedJobs from "../components/RelatedJobs";
 
 const JobPageIndv = () => {
-
 
     const location = useLocation();
 
@@ -27,7 +27,6 @@ const JobPageIndv = () => {
         const lastSegment = queryParameters.pop()
         navigator.clipboard.writeText(`https://jobi-job-board-app.netlify.app/job-listings/${lastSegment}`)
     }
-
 
     return (
         <>
@@ -51,7 +50,7 @@ const JobPageIndv = () => {
             <main className="wrapper flex-column flex-lg-row d-flex py-5 justify-content-between">
                 <div className="col-12 col-lg-7 col-xl-8">
                     <div>
-                        <p><span className="text-muted">{location.state.date}</span> by <strong>{location.state.company}</strong></p>
+                        <p><span className="text-muted job-details">{location.state.date}</span> by <strong>{location.state.company}</strong></p>
                         <h2>{location.state.jobTitle}</h2>
                     </div>
                     <section className="d-flex flex-row py-3 flex-wrap">
@@ -246,9 +245,7 @@ const JobPageIndv = () => {
                 </div>
             </main>
 
-
-
-
+            <RelatedJobs />
         </>
     )
 }
