@@ -48,9 +48,9 @@ const JobPageIndv = () => {
                         <h2>{location.state.jobTitle}</h2>
                     </div>
                     <section className="rounded-brand border border-grey my-4 px-4 py-3">
-                        <div className="d-flex py-3">
+                        <div className="d-flex py-3 align-items-center">
                             <img src={BulletOne} alt="bullet point one" className="bullet-icon me-2" />
-                            <h3 className="job-heading">Overview</h3>
+                            <h3 className="job-heading mb-0">Overview</h3>
                         </div>
                         <p className="lh-lg">{location.state.longOverview}</p>
                     </section>
@@ -72,7 +72,7 @@ const JobPageIndv = () => {
                                 return (
                                     <>
                                         <li className="mb-3 lh-lg mx-2">
-                                        <p className="mx-2">{responsibility}</p>
+                                            <p className="mx-2">{responsibility}</p>
                                         </li>
                                     </>
                                 )
@@ -123,14 +123,22 @@ const JobPageIndv = () => {
 
 
                 <div className="col-3">
-                    <section className="bg-brand-ultra-light">
+                    <section className="bg-brand-ultra-light py-5">
                         <section>
-                            <div>
-                                <img src={location.state.logo} alt={`${location.state.company} logo`} />
+                            <div className="d-flex justify-content-center">
+                                <img src={location.state.logo} alt={`${location.state.company} logo`} className="company-icon-large" />
+                            </div>
+                            <div className="d-flex justify-content-center">
                                 <p>{location.state.company}</p>
                             </div>
-                            <div>
-                                <Link to="/" className="btn btn-primary">Visit Website</Link>
+                            <div className="d-flex justify-content-center">
+                                <a
+                                    href="https://www.google.ca/"
+                                    target="_blank"
+                                    className="btn btn-primary"
+                                >
+                                    Visit Website
+                                </a>
                             </div>
                         </section>
                         <section>
@@ -170,6 +178,15 @@ const JobPageIndv = () => {
                                 })
                                 }
                             </ul>
+                        </section>
+                        <section>
+                            <a
+                                href="https://www.google.ca/"
+                                target="_blank"
+                                className="btn btn-primary"
+                            >
+                                Apply Now
+                            </a>
                         </section>
                     </section>
                 </div>
