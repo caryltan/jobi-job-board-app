@@ -48,22 +48,22 @@ const JobPageIndv = () => {
                 </div>
             </header>
 
-            <main className="wrapper flex-row d-flex py-5 justify-content-between">
-                <div className="col-8">
+            <main className="wrapper flex-column flex-sm-row d-flex py-5 justify-content-between">
+                <div className="col-12 col-sm-8">
                     <div>
                         <p><span className="text-muted">{location.state.date}</span> by <strong>{location.state.company}</strong></p>
                         <h2>{location.state.jobTitle}</h2>
                     </div>
-                    <section className="d-flex flex-row py-3">
-                        <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button">
+                    <section className="d-flex flex-row py-3 flex-wrap">
+                        <div className="d-flex bg-brand-ultra-light me-3 my-2 px-3 py-2 rounded align-items-center share-button">
                             <img src={FacebookIcon} alt="Facebook Icon" className="social-icon-small me-2"/>
                             <p className="mb-0 job-details ">Facebook</p>
                         </div>
-                        <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button">
+                        <div className="d-flex bg-brand-ultra-light me-3 my-2 px-3 py-2 rounded align-items-center share-button">
                             <img src={TwitterIcon} alt="Twitter Icon" className="social-icon-small me-2"/>
                             <p className="mb-0 job-details ">Twitter</p>
                         </div>
-                        <div className="d-flex bg-brand-ultra-light me-3 px-3 py-2 rounded align-items-center share-button" onClick={CopyLink}>
+                        <div className="d-flex bg-brand-ultra-light me-3  my-2 px-3 py-2 rounded align-items-center share-button" onClick={CopyLink}>
                             <img src={ShareIcon} alt="Share Icon" className="social-icon-small me-2"/>
                             <p className="mb-0 job-details ">Copy</p>
                         </div>
@@ -143,7 +143,7 @@ const JobPageIndv = () => {
 
 
 
-                <div className="col-3">
+                <div className="col-12 col-sm-3">
                     <section className="bg-brand-ultra-light pt-5 pb-4">
                         <section className="pb-4">
                             <div className="d-flex justify-content-center">
