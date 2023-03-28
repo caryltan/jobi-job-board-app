@@ -154,21 +154,6 @@ h2 {
   font-size: 0.75rem;
 }
 
-.header-image {
-  position: absolute;
-  bottom: 0px;
-  z-index: 1;
-  max-width: 35%;
-}
-
-.header-bg {
-  height: 500px;
-}
-
-.bottom-header-container {
-  position: relative;
-}
-
 /* .header-bg {
   background-image: url("./assets/header-bg-transparent.png");
   background-repeat: no-repeat;
@@ -180,4 +165,20 @@ h2 {
   border-radius: 2rem;
   border: 2px solid #cecece;
   padding: 10px 10px 10px 15px;
+}
+
+.header-h1 {
+  font-size: 70px;
+}
+
+.bottom-header {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.header-image {
+  position: relative;
+  bottom: -20px;
+  width: 100%;
 }

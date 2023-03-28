@@ -1,6 +1,6 @@
 import Navbar from "./Navbar.js";
 import CorporateImage from "../assets/corporate-couple-clipped.png";
-import BottomHeader from "../assets/header-bg-bottom.png";
+import HeaderBottom from "../assets/header-bottom.png";
 import HomeMinSearch from "./HomeMinSearch.js";
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
                         <div className="container-fluid mx-auto row curved">
                             <div className="col-md-6">
                                 <div className="w-75 mx-5 d-flex flex-column align-items-center">
-                                    <h1>Find & Hire Top 3% of experts on Jobi</h1>
+                                    <h1 className="header-h1 mb-4">Find & Hire Top 3% of experts on Jobi</h1>
                                     <p>With the largest professional creative community online, simply search through our website</p>
                                 </div>
                                 <div>
@@ -30,11 +30,11 @@ const Header = () => {
                     </header>
                 </div>
             </div>
-            <div className=" col-12 d-flex flex-row">
+            
                 <div className="col-12">
-                    <img className="img-fluid" src={BottomHeader} alt="" />
+                    <img className="bottom-header" src={HeaderBottom} alt="" />
                 </div>
-            </div>
+            
         </>
     )
 }
