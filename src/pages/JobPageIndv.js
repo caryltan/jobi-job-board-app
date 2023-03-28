@@ -71,7 +71,7 @@ const JobPageIndv = () => {
                             {[...location.state.responsibilities].map((responsibility) => {
                                 return (
                                     <>
-                                        <li className="mb-3 lh-lg mx-2">
+                                        <li className="mb-3 lh-lg">
                                             <p className="mx-2">{responsibility}</p>
                                         </li>
                                     </>
@@ -90,7 +90,7 @@ const JobPageIndv = () => {
                             {[...location.state.requiredSkills].map((skill) => {
                                 return (
                                     <>
-                                        <li className="mb-3 lh-lg mx-2">
+                                        <li className="mb-3 lh-lg">
                                             <p className="mx-2">{skill}</p>
                                         </li>
                                     </>
@@ -109,7 +109,7 @@ const JobPageIndv = () => {
                             {[...location.state.benefits].map((benefit) => {
                                 return (
                                     <>
-                                        <li className="mb-3 lh-lg mx-2">
+                                        <li className="mb-3 lh-lg">
                                             <p className="mx-2">{benefit}</p>
                                         </li>
                                     </>
@@ -197,12 +197,12 @@ const JobPageIndv = () => {
                             </div>
                         </section>
                         <section>
-                            <div className="list-unstyled">
+                            <div className="d-flex flex-wrap justify-content-center">
                                 {[...location.state.tags].map((tag) => {
                                     return (
                                         <>
-                                            <div className="btn btn-primary">
-                                                <p className="tag-text">{tag}</p>
+                                            <div className="btn btn-tag mx-1 my-1">
+                                                <p className="tag-text mb-0">{tag}</p>
                                             </div>
                                         </>
                                     )
