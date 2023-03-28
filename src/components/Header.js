@@ -14,7 +14,7 @@ const Header = () => {
                     <header className="container-fluid">
                         <div className="container-fluid mx-auto row curved">
                             <div className="col-md-6">
-                                <div className="w-75 mx-auto d-flex flex-column align-items-center">
+                                <div className="w-75 mx-5 d-flex flex-column align-items-center">
                                     <h1>Find & Hire Top 3% of experts on Jobi</h1>
                                     <p>With the largest professional creative community online, simply search through our website</p>
                                 </div>
