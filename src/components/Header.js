@@ -6,9 +6,10 @@ const Header = () => {
     return (
         <>
 
-            <Navbar />
+            
             {/* <div className="bg-brand-light header-bg"> */}
-            <div className="bg-brand-light-header header-bg">
+            <div className="header-bg col-12 bg-brand-light-header ">
+                <Navbar />
                 <div className="wrapper">
                     <header className="container-fluid">
                         <div className="container-fluid mx-auto row curved">
@@ -18,19 +19,19 @@ const Header = () => {
                                     <p>With the largest professional creative community online, simply search through our website</p>
                                 </div>
                             </div>
-                            <div className="col-md-6 header-image-container">
+                            {/* <div className="col-md-6 header-image-container">
                                 <img className="header-image" src={CorporateImage} alt="Two young people in corporate attire holding mobile devices" />
-                            </div>
+                            </div> */}
 
                         </div>
                     </header>
                 </div>
             </div>
-            <div className=" col-12 d-flex flex-row">
+            {/* <div className=" col-12 d-flex flex-row">
                 <div className="col-12">
                     <img className="img-fluid" src={BottomHeader} alt="" />
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
