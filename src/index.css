@@ -56,7 +56,7 @@ h2 {
 }
 
 .check-list-job {
-  list-style-image: url("./assets/checkmark.svg");
+  list-style-image: url("./assets/checkmark-small.png");
 }
 
 .logo-footer {

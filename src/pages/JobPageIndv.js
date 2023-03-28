@@ -12,6 +12,7 @@ import BulletTwo from "../assets/bullet-two.svg";
 import BulletThree from "../assets/bullet-three.svg";
 import BulletFour from "../assets/bullet-four.svg";
 import BulletFive from "../assets/bullet-five.svg";
+import Checkmark from "../assets/checkmark.svg";
 
 const JobPageIndv = () => {
 
@@ -23,6 +24,7 @@ const JobPageIndv = () => {
 
     return (
         <>
+
             <header className="bg-brand-dark pt-4">
                 <NavBarDark />
                 <div className="d-flex flex-column pt-4 pb-5">
@@ -50,14 +52,14 @@ const JobPageIndv = () => {
                             <img src={BulletOne} alt="bullet point one" className="bullet-icon me-2" />
                             <h3 className="job-heading">Overview</h3>
                         </div>
-                        <p>{location.state.longOverview}</p>
+                        <p className="lh-lg">{location.state.longOverview}</p>
                     </section>
                     <section className="rounded-brand border border-grey my-4 px-4 py-3">
                         <div className="d-flex py-3">
                             <img src={BulletTwo} alt="bullet point two" className="bullet-icon me-2" />
                             <h3 className="job-heading">Job Description</h3>
                         </div>
-                        <p>{location.state.jobDescription}</p>
+                        <p className="lh-lg">{location.state.jobDescription}</p>
                     </section>
                     <section className="rounded-brand border border-grey my-4 px-4 py-3">
                         <div className="d-flex py-3">
@@ -69,7 +71,9 @@ const JobPageIndv = () => {
                             {[...location.state.responsibilities].map((responsibility) => {
                                 return (
                                     <>
-                                        <li>{responsibility}</li>
+                                        <li className="mb-3 lh-lg mx-2">
+                                        <p className="mx-2">{responsibility}</p>
+                                        </li>
                                     </>
                                 )
                             })
@@ -86,7 +90,9 @@ const JobPageIndv = () => {
                             {[...location.state.requiredSkills].map((skill) => {
                                 return (
                                     <>
-                                        <li>{skill}</li>
+                                        <li className="mb-3 lh-lg mx-2">
+                                            <p className="mx-2">{skill}</p>
+                                        </li>
                                     </>
                                 )
                             })
@@ -103,7 +109,9 @@ const JobPageIndv = () => {
                             {[...location.state.benefits].map((benefit) => {
                                 return (
                                     <>
-                                        <li>{benefit}</li>
+                                        <li className="mb-3 lh-lg mx-2">
+                                            <p className="mx-2">{benefit}</p>
+                                        </li>
                                     </>
                                 )
                             })
