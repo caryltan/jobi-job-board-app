@@ -36,7 +36,7 @@ const LearnMore = () => {
                         </li>
                     </ul>
                     <div className="d-flex justify-content-sm-start justify-content-center">
-                        <button type="button" className="btn btn-primary">Learn More</button>
+                        <button type="button" className="btn-homepage btn-primary">Learn More</button>
                     </div>
                     </div>
                 </div>

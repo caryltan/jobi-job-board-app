@@ -11,8 +11,8 @@ const JobPortalSection = () => {
                         </div>
                         <div className="d-flex col-12 col-md-4 align-items-center justify-content-end">
                             <div className="d-flex justify-content-end">
-                                <button type="button" className="btn btn-primary mx-2">Looking for a job?</button>
-                                <button type="button" className="btn btn-primary mx-2">Post a job</button>
+                                <button type="button" className="btn-homepage btn-primary mx-2">Looking for a job?</button>
+                                <button type="button" className="btn-homepage btn-primary mx-2">Post a job</button>
                             </div>
                         </div>
                     </div>

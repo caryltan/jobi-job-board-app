@@ -37,7 +37,7 @@ const HireTalents = () => {
                             </div>
                         </div>
                     </div>
-                    <button type="button" className="btn btn-primary my-4">Explore All</button>
+                    <button type="button" className="btn-homepage btn-primary my-4">Explore All</button>
                 </div>
                 </div>
             </section>
