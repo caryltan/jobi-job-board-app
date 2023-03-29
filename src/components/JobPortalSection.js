@@ -6,7 +6,7 @@ const JobPortalSection = () => {
                     <hr />
                     <div className="row">
                         <div className="col-12 col-md-8 d-flex flex-column py-4">
-                            <h2>Most complete job portal</h2>
+                            <h2>Your complete job portal</h2>
                             <p className="text-muted">Sign up and start your search</p>
                         </div>
                         <div className="d-flex col-12 col-md-4 align-items-center justify-content-end">

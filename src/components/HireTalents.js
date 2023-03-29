@@ -3,13 +3,13 @@ import Search from "../assets/search-talents-preview.png"
 const HireTalents = () => {
     return (
         <>
-            <section className="wrapper py-5">
+            <section className="wrapper py-1 py-lg-5">
                 <div className="row justify-content-between">
                 <div className="col-12 col-md-6">
                     <img src={Search} alt="screenshot of hireable talent listings" className="w-100" />
                 </div>
                 <div className="col-12 col-md-6 px-5 py-5">
-                    <p className="text-muted pt-5 sub-heading">Find Freelancers</p>
+                    <p className="text-muted pt-5 sub-heading">FIND FREELANCERS</p>
                     <h2 className="pb-3 homepage-heading">Hire Top Talents</h2>
                     <div className="accordion" id="accordionExample">
                         <div className="accordion-item">

@@ -88,10 +88,10 @@ const JobPageIndv = () => {
                         </div>
 
                         <ul className="check-list-job">
-                            {[...location.state.responsibilities].map((responsibility) => {
+                            {[...location.state.responsibilities].map((responsibility, index) => {
                                 return (
                                     <>
-                                        <li className="mb-3 lh-lg">
+                                        <li className="mb-3 lh-lg" key={index}>
                                             <p className="mx-2">{responsibility}</p>
                                         </li>
                                     </>
@@ -107,10 +107,10 @@ const JobPageIndv = () => {
                         </div>
 
                         <ul className="check-list-job">
-                            {[...location.state.requiredSkills].map((skill) => {
+                            {[...location.state.requiredSkills].map((skill, index) => {
                                 return (
                                     <>
-                                        <li className="mb-3 lh-lg">
+                                        <li className="mb-3 lh-lg" key={index}>
                                             <p className="mx-2">{skill}</p>
                                         </li>
                                     </>
@@ -126,10 +126,10 @@ const JobPageIndv = () => {
                         </div>
 
                         <ul className="check-list-job">
-                            {[...location.state.benefits].map((benefit) => {
+                            {[...location.state.benefits].map((benefit, index) => {
                                 return (
                                     <>
-                                        <li className="mb-3 lh-lg">
+                                        <li className="mb-3 lh-lg" key={index}>
                                             <p className="mx-2">{benefit}</p>
                                         </li>
                                     </>
@@ -218,10 +218,10 @@ const JobPageIndv = () => {
                         </section>
                         <section>
                             <div className="d-flex flex-wrap justify-content-center">
-                                {[...location.state.tags].map((tag) => {
+                                {[...location.state.tags].map((tag, index) => {
                                     return (
                                         <>
-                                            <div className="btn btn-tag mx-1 my-1">
+                                            <div className="btn btn-tag mx-1 my-1" key={index}>
                                                 <p className="tag-text mb-0">{tag}</p>
                                             </div>
                                         </>

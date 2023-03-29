@@ -9,7 +9,7 @@ const Header = () => {
 
             <Navbar />
             {/* <div className="bg-brand-light header-bg"> */}
-            <div className="bg-brand-light-header header-bg pt-5 px-5">
+            <div className="bg-brand-light-header header-bg px-5">
                 <div className="wrapper">
                     <header className="container-fluid">
                         <div className="container-fluid mx-auto row curved">

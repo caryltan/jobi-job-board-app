@@ -126,9 +126,7 @@ h2 {
   h1 {
     font-size: 50px;
   }
-  .homepage-heading {
-    font-size: 50px !important;
-  }
+  
 }
 
 @media (min-width: 769px) {
@@ -208,6 +206,9 @@ h2 {
   .bottom-header {
     display: block;
   }
+  .homepage-heading {
+    font-size: 70px !important;
+  }
 }
 
 .categories-section {
@@ -217,5 +218,18 @@ h2 {
 }
 
 .homepage-heading {
-  font-size: 70px !important;
+  font-size: 50px !important;
+}
+
+.rating-heading {
+  font-size: 40px;
+  color: #0EBB59;
+}
+
+.review-heading {
+  color: #0EBB59;
+}
+
+.review-text {
+  font-size: 1.1rem;
 }
