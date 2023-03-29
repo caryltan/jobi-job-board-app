@@ -34,9 +34,6 @@ const JobPageIndv = () => {
     }, []);
 
 
-
-    const location = useLocation();
-
     console.log(jobData)
 
 
@@ -101,7 +98,7 @@ const JobPageIndv = () => {
                                     <img src={BulletTwo} alt="bullet point two" className="bullet-icon me-2" />
                                     <h3 className="job-heading">Job Description</h3>
                                 </div>
-                                <p className="lh-lg">{location.state.jobDescription}</p>
+                                <p className="lh-lg">{jobData.jobDescription}</p>
                             </section>
                             <section className="rounded-brand border border-grey my-4 px-4 py-3">
                                 <div className="d-flex py-3">
@@ -110,7 +107,7 @@ const JobPageIndv = () => {
                                 </div>
 
                                 <ul className="check-list-job">
-                                    {[jobData.responsibilities].map((responsibility, index) => {
+                                    {jobData.responsibilities && [...jobData.responsibilities].map((responsibility, index) => {
                                         return (
                                             <>
                                                 <li className="mb-3 lh-lg" key={index}>
@@ -129,7 +126,7 @@ const JobPageIndv = () => {
                                 </div>
 
                                 <ul className="check-list-job">
-                                    {[jobData.requiredSkills].map((skill, index) => {
+                                    {jobData.requiredSkills && [...jobData.requiredSkills].map((skill, index) => {
                                         return (
                                             <>
                                                 <li className="mb-3 lh-lg" key={index}>
@@ -148,7 +145,7 @@ const JobPageIndv = () => {
                                 </div>
 
                                 <ul className="check-list-job">
-                                    {[jobData.benefits].map((benefit, index) => {
+                                    {jobData.benefits && [...jobData.benefits].map((benefit, index) => {
                                         return (
                                             <>
                                                 <li className="mb-3 lh-lg" key={index}>
@@ -168,10 +165,10 @@ const JobPageIndv = () => {
                             <section className="bg-brand-ultra-light pt-5 pb-4">
                                 <section className="pb-4">
                                     <div className="d-flex justify-content-center">
-                                        <img src={location.state.logo} alt={`${jobData.company} logo`} className="company-icon-large pb-3" />
+                                        <img src={jobData.logo} alt={`${jobData.company} logo`} className="company-icon-large pb-3" />
                                     </div>
                                     <div className="d-flex justify-content-center">
-                                        <p>{location.state.company}</p>
+                                        <p>{jobData.company}</p>
                                     </div>
                                     <div className="d-flex justify-content-center">
                                         <a
@@ -240,7 +237,7 @@ const JobPageIndv = () => {
                                 </section>
                                 <section>
                                     <div className="d-flex flex-wrap justify-content-center">
-                                        {[jobData.tags].map((tag, index) => {
+                                        {jobData.tags && [...jobData.tags].map((tag, index) => {
                                             return (
                                                 <>
                                                     <div className="btn btn-tag mx-1 my-1" key={index}>
