@@ -17,7 +17,7 @@ function App() {
     <>
 
       <Routes>
-        <Route path="/" element={ <Home /> } />
+        {/* <Route path="/" element={ <Home /> } /> */}
         <Route path="/explore" element={ <JobList /> } /> 
         <Route path="/job-listings/:jobListingID" element={ <JobPageIndv /> } />   
       </Routes>
