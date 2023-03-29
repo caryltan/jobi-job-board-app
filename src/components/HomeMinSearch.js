@@ -4,11 +4,15 @@ const HomeMinSearch = () => {
             <div className="pb-5 pt-3" >
 
                 <form className="d-flex flex-row mb-3">
-                    <div className="col-12 my-2 d-flex mx-5 justify-content-center justify-content-xl-start">
-                        <input type="search" className="home-search-bar col-6 me-3" id="searchBar" placeholder="Search job, title, etc..." />
-                        <button type="button" className="btn btn-primary col-2">
-                            Search
-                        </button>
+                    <div className="col-12 my-2 d-flex justify-content-center justify-content-xl-start flex-column flex-md-row ">
+                        <div className="d-flex justify-content-center justify-content-xl-start mb-3 col-12 col-md-6">
+                            <input type="search" className="home-search-bar me-3 w-100" id="searchBar" placeholder="Search job, title, etc..." />
+                        </div>
+                        <div className="d-flex justify-content-center justify-content-xl-start mb-3 col-12 col-md-2">
+                            <button type="button" className="btn btn-primary w-100">
+                                Search
+                            </button>
+                        </div>
                     </div>
 
                 </form>
