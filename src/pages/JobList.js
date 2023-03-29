@@ -29,11 +29,11 @@ const JobList = () => {
             setJobListData(newState);
         }
         )
-    }, []);
+    }, [dbState]);
 
-    const handleSortListings = (e) => {
-        console.log(e.target.value)
-    }
+    // const handleSortListings = (e) => {
+    //     console.log(e.target.value)
+    // }
 
     return (
         <>
@@ -76,7 +76,7 @@ const JobList = () => {
                                     className="form-select rounded form-control"
                                     aria-label="category selection"
                                     id="sortListings"
-                                    onChange={handleSortListings}
+                                    // onChange={handleSortListings}
                                 >
                                     <option value="Latest">Latest</option>
                                     <option value="Oldest">Oldest</option>
@@ -89,6 +89,7 @@ const JobList = () => {
                     <div className="row pb-5">
                         {jobListData && [...jobListData].reverse().map((jobListing, index) => {
                             return (
+                                
                                 <>
                                     <JobListCard
                                         key={index}

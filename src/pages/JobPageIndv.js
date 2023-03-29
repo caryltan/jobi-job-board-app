@@ -34,9 +34,6 @@ const JobPageIndv = () => {
     }, []);
 
 
-    console.log(jobData)
-
-
     const CopyLink = (e) => {
         e.preventDefault();
         const queryParameters = window.location.href.split('/');
