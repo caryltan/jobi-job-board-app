@@ -5,53 +5,53 @@ import BlogCorporate from "../assets/blog-3.jpg";
 const BlogSection = () => {
     return (
         <>
-            <section class="album bg-light py-5">
-                <div class="wrapper">
-                <div class="container">
+            <section className="album py-5">
+                <div className="wrapper">
+                <div className="container">
                     <div>
-                        <h2 class="text-center">Our Blog</h2>
+                        <h2 className="text-center homepage-heading">Our Blog</h2>
                     </div>
-                    <div class="row pt-5">
+                    <div className="row pt-5">
 
-                        {/* <div class="container-sm shadow p-3 mb-5 bg-white rounded category-card h-50 px-4"> */}
-                        <div class="col-12 col-lg-4 ">
-                            <div class="card mb-4 bg-white border-0 blog">
-                                <div class="card-body">
-                                    <div class="card-img-top">
-                                        <img src={BlogComputer} alt="Work desk displaying a computer" class="img-fluid" />
+                        {/* <div className="container-sm shadow p-3 mb-5 bg-white rounded category-card h-50 px-4"> */}
+                        <div className="col-12 col-lg-4 ">
+                            <div className="card mb-4 bg-white border-0 blog">
+                                <div className="card-body">
+                                    <div className="card-img-top">
+                                        <img src={BlogComputer} alt="Work desk displaying a computer" className="img-fluid" />
                                     </div>
-                                    <div class="card-text">
-                                        <p class="text-muted pt-4">23 APR, 2020</p>
-                                        <h5 class="pb-4">Working From Home: Exploring The Impact on Productivity and Innovation</h5>
-                                        <button type="button" class="btn btn-primary">Read More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 ">
-                            <div class="card mb-4 bg-white border-0 blog">
-                                <div class="card-body">
-                                    <div class="card-img-top">
-                                        <img src={BlogCity} alt="Upward shot of city skyscrapers" class="img-fluid" />
-                                    </div>
-                                    <div class="card-text">
-                                        <p class="text-muted pt-4">23 APR, 2020</p>
-                                        <h5 class="pb-4">Unlocking Your Potential: Strategies and Tips for Job Seekers</h5>
-                                        <button type="button" class="btn btn-primary">Read More</button>
+                                    <div className="card-text">
+                                        <p className="text-muted pt-4">23 APR, 2020</p>
+                                        <h5 className="pb-4">Working From Home: Exploring The Impact on Productivity and Innovation</h5>
+                                        <button type="button" className="btn btn-primary">Read More</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 ">
-                            <div class="card mb-4 bg-white border-0 blog">
-                                <div class="card-body">
-                                    <div class="card-img-top">
-                                        <img src={BlogCorporate} alt="Group of employees in a corporate work setting" class="img-fluid" />
+                        <div className="col-12 col-lg-4 ">
+                            <div className="card mb-4 bg-white border-0 blog">
+                                <div className="card-body">
+                                    <div className="card-img-top">
+                                        <img src={BlogCity} alt="Upward shot of city skyscrapers" className="img-fluid" />
                                     </div>
-                                    <div class="card-text">
-                                        <p class="text-muted pt-4">23 APR, 2020</p>
-                                        <h5 class="pb-4">Mastering the Job Search: Strategies and Tips for Landing Your Dream Career</h5>
-                                        <button type="button" class="btn btn-primary">Read More</button>
+                                    <div className="card-text">
+                                        <p className="text-muted pt-4">23 APR, 2020</p>
+                                        <h5 className="pb-4">Unlocking Your Potential: Strategies and Tips for Job Seekers</h5>
+                                        <button type="button" className="btn btn-primary">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12 col-lg-4 ">
+                            <div className="card mb-4 bg-white border-0 blog">
+                                <div className="card-body">
+                                    <div className="card-img-top">
+                                        <img src={BlogCorporate} alt="Group of employees in a corporate work setting" className="img-fluid" />
+                                    </div>
+                                    <div className="card-text">
+                                        <p className="text-muted pt-4">23 APR, 2020</p>
+                                        <h5 className="pb-4">Mastering the Job Search: Strategies and Tips for Landing Your Dream Career</h5>
+                                        <button type="button" className="btn btn-primary">Read More</button>
                                     </div>
                                 </div>
                             </div>

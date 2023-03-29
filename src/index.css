@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-h1, h2 {
+h1,
+h2 {
   font-family: "EB Garamond", serif;
 }
 
@@ -12,16 +9,54 @@ h1, h2 {
   min-height: 400px;
 }
 
+.category-card {
+  min-height: 255px;
+}
+
+.job-card {
+  min-height: 300px;
+}
+
+.job-heading {
+  font-size: 1.3rem !important;
+}
+
+.inner-card {
+  min-height: 200px;
+}
+
 .blog {
   min-height: 450px;
+}
+
+.share-button {
+  cursor: pointer;
+}
+
+.social-icon-small {
+  height: 15px;
 }
 
 .social-icon {
   height: 20px;
 }
 
+.company-icon {
+  height: 50px;
+}
+
+.company-icon-large {
+  width: 80px;
+  height: auto;
+}
+
 .wrapper {
   width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper-80 {
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -33,6 +68,168 @@ h1, h2 {
   list-style-image: url("./assets/checkmark.svg");
 }
 
+.check-list-job {
+  list-style-image: url("./assets/checkmark-small.png");
+}
+
 .logo-footer {
   max-width: 150px;
+}
+
+.sub-heading {
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.job-sub-heading {
+  font-size: 0.85rem;
+}
+
+.job-details {
+  font-size: 0.9rem;
+}
+
+.bookmark {
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .wrapper-80 {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .job-card {
+    min-height: 400px;
+  }
+
+  .inner-card {
+    min-height: 250px;
+  }
+
+  .job-card-heading {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-card-sub-heading {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .rounded-responsive {
+    border-radius: 0.375rem !important;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  
+}
+
+@media (min-width: 769px) {
+  .rounded-responsive {
+    border-radius: 0 !important;
+  }
+
+  .rounded-responsive-end {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+
+  .rounded-responsive-start {
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+.bullet-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.tag-text {
+  font-size: 0.75rem;
+}
+
+/* .header-bg {
+  background-image: url("./assets/header-bg-transparent.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+} */
+
+.home-search-bar {
+  border-radius: 2rem;
+  border: 2px solid #cecece;
+  padding: 10px 10px 10px 15px;
+}
+
+.bottom-header {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.header-image {
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  max-width: 500px;
+  z-index: 0;
+}
+
+.header-bg {
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .header-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .header-image  {
+    position: relative;
+    bottom: 0;
+  }
+  .bottom-header {
+    display: none;
+  }
+}
+
+@media (min-width: 1200.1px) {
+  .bottom-header {
+    display: block;
+  }
+  .homepage-heading {
+    font-size: 70px !important;
+  }
+}
+
+.categories-section {
+  background-image: url("./assets/half-block-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage-heading {
+  font-size: 50px !important;
+}
+
+.rating-heading {
+  font-size: 40px;
+  color: #0EBB59;
+}
+
+.review-heading {
+  color: #0EBB59;
+}
+
+.review-text {
+  font-size: 1.1rem;
 }
