@@ -6,7 +6,7 @@ import HireTalents from "../components/HireTalents";
 import TestimonialsSection from "../components/TestimonialsSection";
 import BlogSection from "../components/BlogSection";
 
-const home = () => {
+const Home = () => {
     return (
         <>
         <Header/>
@@ -20,4 +20,4 @@ const home = () => {
     )
 }
 
-export default home;
+export default Home;
