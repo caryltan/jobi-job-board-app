@@ -5,7 +5,7 @@ import {
   Route,
   useParams,
 } from 'react-router-dom';
-import Home from "./pages/Home.js";
+import Home from "./pages/Home"
 import Footer from "./components/Footer.js"
 import Header from "./components/Header.js"
 import bootstrap from 'bootstrap'
@@ -17,7 +17,7 @@ function App() {
     <>
 
       <Routes>
-        {/* <Route path="/" element={ <Home /> } /> */}
+        <Route path="/" element={ <Home /> } />
         <Route path="/explore" element={ <JobList /> } /> 
         <Route path="/job-listings/:jobListingID" element={ <JobPageIndv /> } />   
       </Routes>
