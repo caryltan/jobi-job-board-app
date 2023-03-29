@@ -205,3 +205,9 @@ h2 {
     display: block;
   }
 }
+
+.categories-section {
+  background-image: url("./assets/half-block-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

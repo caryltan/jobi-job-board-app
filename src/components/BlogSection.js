@@ -5,7 +5,7 @@ import BlogCorporate from "../assets/blog-3.jpg";
 const BlogSection = () => {
     return (
         <>
-            <section className="album bg-light py-5">
+            <section className="album py-5">
                 <div className="wrapper">
                 <div className="container">
                     <div>

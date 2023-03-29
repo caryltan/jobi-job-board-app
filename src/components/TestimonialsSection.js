@@ -4,7 +4,7 @@ import Rating from "../assets/rating.svg";
 const TestimonialsSection = () => {
     return (
         <>
-            <section className="bg-light">
+            <section className="categories-section .bg-brand-light-header">
                 <div className="wrapper">
                     <div className="testimonial-section">
                         <div className="row justify-content-between">
