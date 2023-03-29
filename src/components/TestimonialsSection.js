@@ -12,7 +12,7 @@ const TestimonialsSection = () => {
                             <div className="col-12 col-lg-4 py-5">
                                 <div>
                                     <p className="text-muted sub-heading">TESTIMONIALS</p>
-                                    <h2>Clients love Jobi</h2>
+                                    <h2 className="homepage-heading">Clients love Jobi</h2>
                                 </div>
                                 <div>
                                     <h3>A+ Rating</h3>

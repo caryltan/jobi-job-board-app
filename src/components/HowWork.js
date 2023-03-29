@@ -36,7 +36,9 @@ const HowWork = () => {
                             <h4 className="text-center">Apply or Hire</h4>
                             <p className="text-center">Apply and get your preferable jobs with all the requirements and get hired.</p>
                         </div>
-                        <hr />
+                        <div className="py-5">
+                            <hr />
+                        </div>
                     </div>
                 </div>
             </section>

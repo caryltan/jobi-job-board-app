@@ -9,7 +9,7 @@ const BlogSection = () => {
                 <div className="wrapper">
                 <div className="container">
                     <div>
-                        <h2 className="text-center">Our Blog</h2>
+                        <h2 className="text-center homepage-heading">Our Blog</h2>
                     </div>
                     <div className="row pt-5">
 

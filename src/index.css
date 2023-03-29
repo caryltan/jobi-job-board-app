@@ -126,6 +126,9 @@ h2 {
   h1 {
     font-size: 50px;
   }
+  .homepage-heading {
+    font-size: 50px !important;
+  }
 }
 
 @media (min-width: 769px) {
@@ -211,4 +214,8 @@ h2 {
   background-image: url("./assets/half-block-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.homepage-heading {
+  font-size: 70px !important;
 }

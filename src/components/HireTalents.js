@@ -10,7 +10,7 @@ const HireTalents = () => {
                 </div>
                 <div className="col-12 col-md-6 px-5 py-5">
                     <p className="text-muted pt-5 sub-heading">Find Freelancers</p>
-                    <h2 className="pb-3">Hire Top Talents</h2>
+                    <h2 className="pb-3 homepage-heading">Hire Top Talents</h2>
                     <div className="accordion" id="accordionExample">
                         <div className="accordion-item">
                             <h3 className="accordion-header" id="headingOne">
