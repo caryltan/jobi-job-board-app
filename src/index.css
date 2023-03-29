@@ -123,6 +123,9 @@ h2 {
   .rounded-responsive {
     border-radius: 0.375rem !important;
   }
+  h1 {
+    font-size: 50px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -167,10 +170,6 @@ h2 {
   padding: 10px 10px 10px 15px;
 }
 
-.header-h1 {
-  font-size: 70px;
-}
-
 .bottom-header {
   width: 100%;
   z-index: 2;
@@ -178,7 +177,31 @@ h2 {
 }
 
 .header-image {
-  position: relative;
+  position: absolute;
   bottom: -20px;
   width: 100%;
+  max-width: 500px;
+}
+
+.header-bg {
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .header-image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .header-image  {
+    position: relative;
+    bottom: 0;
+  }
+  .bottom-header {
+    display: none;
+  }
+}
+
+@media (min-width: 1200.1px) {
+  .bottom-header {
+    display: block;
+  }
 }
