@@ -5,7 +5,7 @@ import {
   Route,
   useParams,
 } from 'react-router-dom';
-import Home from "./pages/Home"
+import Home from "./pages/home"
 import Footer from "./components/Footer.js"
 import Header from "./components/Header.js"
 import bootstrap from 'bootstrap'
