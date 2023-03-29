@@ -1,5 +1,5 @@
 import Logo from "../assets/jobi-logo.svg"
-import Home from "../pages/Home.js";
+import Home from "../pages/home.js";
 import { Link, Routes, Route } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';

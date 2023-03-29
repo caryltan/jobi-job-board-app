@@ -187,7 +187,9 @@ h2 {
 
 .header-bg {
   position: relative;
+  min-height: 550px;
 }
+
 @media (max-width: 1200px) {
   .header-image-container {
     display: flex;
