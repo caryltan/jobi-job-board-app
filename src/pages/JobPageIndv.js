@@ -3,7 +3,6 @@ import {
     Routes,
     Route,
     useParams,
-    useLocation,
 } from 'react-router-dom';
 import { ref, onValue, update, get } from "firebase/database";
 import { useState, useEffect } from "react";
@@ -33,6 +32,7 @@ const JobPageIndv = () => {
         })
     }, []);
 
+    const { jobListingID } = useParams();
 
     const CopyLink = (e) => {
         e.preventDefault();
