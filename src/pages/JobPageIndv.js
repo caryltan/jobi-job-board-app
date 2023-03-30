@@ -1,7 +1,5 @@
 import {
     Link,
-    Routes,
-    Route,
     useParams,
 } from 'react-router-dom';
 import { ref, onValue, update, get } from "firebase/database";
@@ -21,18 +19,17 @@ import { auth } from "../utils/FirebaseConfig";
 const JobPageIndv = () => {
 
     const [jobData, setJobData] = useState([]);
+    const { jobListingID } = useParams();
 
     useEffect(() => {
-        const queryParameters = window.location.href.split('/');
-        const lastSegment = queryParameters.pop()
-        const dbRef = ref(auth, lastSegment);
+        // const queryParameters = window.location.href.split('/');
+        // const lastSegment = queryParameters.pop()
+        const dbRef = ref(auth, jobListingID);
         onValue(dbRef, (response) => {
             const dataResponse = response.val();
             setJobData(dataResponse);
         })
     }, []);
-
-    const { jobListingID } = useParams();
 
     const CopyLink = (e) => {
         e.preventDefault();
