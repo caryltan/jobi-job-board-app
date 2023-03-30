@@ -35,7 +35,7 @@ const JobPageIndv = () => {
         e.preventDefault();
         const queryParameters = window.location.href.split('/');
         const lastSegment = queryParameters.pop()
-        navigator.clipboard.writeText(`https://jobi-job-board-app.netlify.app/job-listings/${lastSegment}`)
+        navigator.clipboard.writeText(`https://jobi-job-board-app.netlify.app/job-listings/${jobListingID}`)
     }
 
     return (
